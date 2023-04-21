@@ -1,0 +1,20 @@
+.autoComplete_wrapper #autoComplete {
+    width: 100% !important;
+}
+
+/* .autoComplete_wrapper ul {
+    overflow: auto !important;
+} */
+
+.autoComplete_wrapper ul li {
+    font-size: 14px;
+    padding: 10px;
+    margin: 0px;
+    overflow: initial;
+    text-overflow: initial;
+    /* overflow: auto; */
+}
+
+.autoComplete_wrapper {
+    display: inherit !important;
+}
