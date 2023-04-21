@@ -13,22 +13,6 @@ build:
 	rm -rf ./public
 	hugo --minify
 
-# .PHONY: update
-# update:
-# 	git remote add upstream git@git.basebit.me:xego/doc-template.git 2>/dev/null || true
-# 	git fetch upstream
-# 	git merge upstream/master
-
-# deploy:
-# 	make build
-# 	tar -czf public.tar.gz public
-# 	# scp public.tar.gz linode:/var/www/private/basebit/xss/.
-# 	# rm -rf ./public.tar.gz
-# 	# ssh linode "cd /var/www/private/basebit/xss/ && tar -xzf public.tar.gz"
-# 	scp public.tar.gz xego:/var/www/xss/.
-# 	rm -rf ./public.tar.gz
-# 	ssh xego "cd /var/www/xss && tar -xzf public.tar.gz"
-
 .PHONY: test
 test:
 	pytest -v ./_scripts
