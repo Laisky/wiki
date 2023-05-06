@@ -34,6 +34,15 @@ Authentication, Authorization, and Accounting
 
 64-bit ARM hardware (chip) architecture. Informally knows as "ARM 64".
 
+### ACM
+
+(acm)=
+
+Authenticated Code Module
+
+firmware 上供 CPU 加载执行的一段验证程序，CPU 会使用内置的公钥校验 ACM 的签名。
+ACM 会负责校验执行 [IBB](@ibb)，从而启动 boot。
+
 ### ADPPA
 
 美国数据隐私和保护法，American Data Privacy and Protection Act
@@ -657,7 +666,7 @@ Microsoft Confidential Consortium Framework
 
 (cia)=
 
-美国国家安全局
+美国中央情报局
 
 #### CIA Triad
 
@@ -671,6 +680,8 @@ Confidentiality, Integrity and Availability
 
 ### CISA
 
+(gov_cisa)=
+
 网络安全与基础设施安全局, Cybersecurity and Infrastructure Security Agency
 
 - <https://github.com/cisagov>
@@ -678,7 +689,21 @@ Confidentiality, Integrity and Availability
 
 ### CoCo
 
+(coco)=
+
 Confidential Container
+
+机密容器，指以云原生的方式，实现机密计算的容器。
+常见做法是 kata + SGX/SEV。
+
+### CoT
+
+(cot)=
+
+Chain of Thought
+
+在 ChatAI Prompt Engineering 中的概念，让 AI 不仅仅给出答复，
+还要解释其推理过程。
 
 ### CPL
 
@@ -731,10 +756,6 @@ CRI-O is an implementation of the CRI to enable using OCI compatible runtimes.
 der 格式的二进制文件，内含一份被吊销的 x509 证书序列号列表。
 
 一般以 `CRL URI` 的形式发布于证书中，tester 可以用这个地址下载 CRL 文件进行比对验证。
-
-### CRTM
-
-Core Root of Trust for Measurement
 
 ### CSP
 
@@ -874,6 +895,12 @@ Data Encrypt Key
 ### DES
 
 离散事件系统，Discrete Event Systems
+
+### DHA
+
+Device Health Attestation
+
+Windows 设备健康检查。对 TPM 等设备进行检查。
 
 ### Differential Privacy
 
@@ -1581,6 +1608,17 @@ SGX 文档里会提到 RootKey 被存在 HW Fuse 里，实际上都是指 [efuse
 假设模型是一个黑盒，仅允许调用输入然后获取模型运行结果。
 该攻击可以验证一个输入是否存在于模型的训练集中。
 
+### IBB
+
+(ibb)=
+
+Initial Boot Block
+
+firmware 中的第一个代码块，是 CPU 通过 reset vector 完成初始化后，
+通过 ACM 加载执行的第一段系统代码。
+
+对 IBB 的度量也称为 [CRTM](@tpm-crtm)。
+
 ### IBM PEF
 
 (ibm_pef)=
@@ -1620,6 +1658,18 @@ Intel 基于 [SGX](@intel_sgx) 和 [TDX](@intel-tdx) 的跨云 TEE 解决方案�
 Intel® Active Management Technology
 
 - [AMT flaw](https://www.intel.com/content/www/us/en/architecture-and-technology/intel-amt-vulnerability-announcement.html)
+
+### Intel BG
+
+(intel_bg)=
+
+Intel Boot Guard
+
+- [Leaked Intel Boot Guard keys:What happened? How does it affect the software supply chain?](https://www.notion.so/laisky/Leaked-Intel-Boot-Guard-keys-What-happened-How-does-it-affect-the-software-supply-chain-7e1a93e47da24253998167e364aaccf6?pvs=4)
+
+通过 [ACM](@acm) 来确保 CPU 只会加载执行经过认证的微码和固件。
+
+![](https://s3.laisky.com/uploads/2023/04/intel-bg.png)
 
 ### Intel CRS
 
@@ -2056,6 +2106,8 @@ Intel 为 SGX1 设计的为 [EPID](@intel-sgx-epid) 提供认真服务的中心�
 
 Launch Control Policy Provider 的 SHA256 签名必须存储在 `IA32_SGXPUBKEYHASH0..3` 寄存器中。
 而改写 `IA32_SGXPUBKEYHASH0..3` 寄存器就依赖于 [FLC](@intel-sgx-flc) 机制。
+
+SGX LE 取代了 [Intel TXT](@intel-txt) 中的 SINIT ACM。
 
 ### Intel SGX LK
 
@@ -2517,13 +2569,13 @@ Intel® Server Platform Services
 Intel TSX Asynchronous Abort
 
 - [Intel® Transactional Synchronization Extensions (Intel® TSX) Asynchronous Abort / CVE-2019-11135 / INTEL-SA-00270](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/advisory-guidance/intel-tsx-asynchronous-abort.html)
-- [Diminisher - A Linux Kernel based Countermeasure for TAA Vulnerability.pdf](https://1drv.ms/b/s!Au45o0W1gVVLup8Px35KXJA-JEvG1Q?e=bNmV0W)
+- [Diminisher - A Linux Kernel based Countermeasure for TAA Vulnerability.pdf](https://s3.laisky.com/public/papers/security/TEE/SGX/Diminisher%20-%20A%20Linux%20Kernel%20based%20Countermeasure%20for%20TAA%20Vulnerability.pdf)
 
 TAA 常被攻击者用来嗅探 [LFB](@term_lfb)。
 
 TAA 漏洞的本质就是通过占满缓存，让目标数据被 cache evict，然后通过 TAA 漏洞嗅探 LFB，从而获取隐私数据。
 
-![taa-attack](http://s3.laisky.com/uploads/2023/04/taa-attack.png)
+![taa-attack](https://s3.laisky.com/uploads/2022/06/taa-attack.png)
 
 ### Intel TDX
 
@@ -2564,11 +2616,12 @@ Intel 的安全协处理器
 
 Intel® Trusted eXecution Technology
 
-基于 [TPM](@tpm) 动态可信度量根，通过一组安全扩展，为系统创建一个被保护的环境。
+基于 [TPM](@tpm) PCR，通过一组安全扩展，为系统创建一个被保护的环境。
+
+静态度量部分称为 [LCP](@lcp)，动态度量部分称为 [MLE](@mle)。
 
 在设计时缺乏对 [SMM](@smm) 的考虑导致可被绕过。
 [SGX](@intel_sgx) 的硬件保护机制可以防止被 [SMM](@smm) 绕过。
-已被 [SGX](@intel_sgx) 取代。
 
 ### Intel VMCS
 
@@ -2639,6 +2692,14 @@ Intel x86 硬件支持 [Intel VMM](@term_intel_vmm) 对 Ring0 的虚拟化操作
 注：VM/guest 指运行于 VMM 内的虚拟操作系统。
 
 Intel 通过 [VMCS](@term_intel_vmcs) 来管理 VMM 中的进程。
+
+### ISO
+
+(iso)=
+
+International Organization for Standardization
+
+国际标准化组织
 
 ### IOMMU
 
@@ -2720,12 +2781,13 @@ Jump-Oriented Programming
 
 [CRA](@cra) 的一种，通过恶意使用 `jump` 来执行代码。
 
-
 ### JTC
 
 (jtc)=
 
 Join Technical Committee
+
+是 [ISO](@iso) 和 [IEC](@iec) 的联合工作组。
 
 ## K
 
@@ -2807,6 +2869,12 @@ LAPIC 寄存器是一段起始地址为 0xFEE00000 、长度为 4KB 的物理地
 - TPR(Task Priority Register)：当前 CPU 处理中断所需的优先级
 - PPR(Processor Priority Register)：当前 CPU 处理中断所需的优先级，只读，由 TPR 决定
 
+### LCP
+
+(lcp)=
+
+Launch Control Policy
+
 ### LDT
 
 (term_ldt)=
@@ -2865,6 +2933,15 @@ User, Group, Other
 
 针对当前用户、所在组、其他组用户三种维度设置 RWX 三权限控制。
 用户粒度较粗，如需更细致的粒度可用 Linux ACL。
+
+### LPC
+
+(lpc)=
+
+Low Pin Count Bus
+
+用于连接低速设备的总线。
+这些低速设备有：BIOS，Super I/O，TPM。LPC 总线通常和主板上的南桥物理相连。
 
 ### LSM
 
@@ -3038,6 +3115,12 @@ Intel 喜欢用 MCU 代表 Intel CPU 微码更新。
 所有的数据都流经第三方，第三方可以窃听甚至修改数据。
 
 如 TLS 中，若服务端和客户端未校验对方的证书，那么就可能遭受 MITM 攻击。
+
+### MLE
+
+(mle)=
+
+Measured Launch Environment
 
 ### MMIO
 
@@ -3226,9 +3309,11 @@ driver 会对 GPU 硬件进行度量。
 
 ### NVRAM
 
-持久化内存 Non-Volatile Memory
+(nvram)=
 
-掉电也不会遗失数据，一般用于 HSM 加密存储区。
+非易失内存/持久化内存 Non-Volatile Memory
+
+掉电也不会遗失数据，一般用于 HSM、TPM 等加密芯片的加密存储区。
 
 ## O
 
@@ -3941,6 +4026,14 @@ System Physical Address
 
 见 [hpa](@term_host_phy_addr)
 
+### SPI
+
+(spi)=
+
+Serial Peripheral Interface
+
+串行外围设备接口。是 Motorola 首先在其 MC68HCXX 系列处理器上定义的。SPI 接口主要应用在 EEPROM，FLASH，实时时钟，AD 转换器，还有数字信号处理器和数字信号解码器之间。SPI，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为 PCB 的布局上节省空间。
+
 ### SS
 
 (ss)=
@@ -4213,9 +4306,13 @@ Time-based One-Time Password
 
 Trusted Platform Module(TPM, also known as ISO/IEC 11889)，由 [TCG](@tcg) 制定
 
-是一项[安全密码处理器](https://zh.wikipedia.org/w/index.php?title=%E5%AE%89%E5%85%A8%E5%AF%86%E7%A0%81%E5%A4%84%E7%90%86%E5%99%A8&action=edit&redlink=1)的[国际标准](https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86)，旨在使用设备中集成的专用[微控制器](https://zh.wikipedia.org/wiki/%E5%BE%AE%E6%8E%A7%E5%88%B6%E5%99%A8)（安全硬件）处理设备中的加密密钥。
+- [TPM 2.0 Library](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
 
-[TPM](@tpm) 中包含一系列的密钥：
+是一项[安全密码处理器](https://zh.wikipedia.org/w/index.php?title=%E5%AE%89%E5%85%A8%E5%AF%86%E7%A0%81%E5%A4%84%E7%90%86%E5%99%A8&action=edit&redlink=1)的[国际标准](https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86)，核心功能在于记录基于 PCR 信任链的[静态度量](@tpm-srtm)和[动态度量](@tpm-drtm)。
+
+TPM 通过 [LPC](@lpc) 或 [SPI](@spi) 总线连接到 CPU，只允许 CPU 访问，不允许外部访问。
+
+除了度量外，TPM 还需要通过 [RA](@remote-attestation) 来证明自己的可信，这通过其内部存储的一系列密钥来实现：
 
 {{< hint info >}}
 TPM 1.2 及以前采用 `EK -- PCA --> AIK` 的方式进行 RA。
@@ -4289,13 +4386,17 @@ TPM Endorsement Key
 
 用户数据采用 [AK](@intel_sgx_ak) 加密
 
-### TPM NVRAM
+### TPM Fragility
 
-(nvram)=
+(tpm_fragility)=
 
-TPM Non-Volatile Memory
+TPM Sealing 绑定到特定 PCR 时，会导致 BIOS、OS 等被锁死，
+任何变动都会导致 TPM 无法 UnSealing。
 
-TPM 硬件内部的加密持久化存储，用于保存密钥等。
+这一情况也称为 TPM Brittle/Brittleness。
+
+TPM2.0 的 `TPM2_PolicyAuthorize` 命令（也称为 `wild card policy`）允许通过非对称签名绑定 BIOS、Kernel，
+而不仅仅是静态的 SHA。
 
 ### TPM PCA
 
@@ -4314,7 +4415,47 @@ TPM Platform Configuration Registers
 一组 TPM 的寄存器，用来存放系统从启动开始的一系列采样哈希值，
 可以用来表征系统运行至今的状态历史（启动链），用作完整性证明。
 
-PCR 在系统启动时创建，只允许清空或扩展，不允许修改。
+每一个 PCR 在系统启动时创建，append-only，只允许清空或扩展，不允许修改。
+
+TPM 2.0 规范要求 TPM 硬件应该至少有 24 个 PCRs，且支持 SHA-256 和 SHA-384。
+
+![tpm-pcr-number](https://s3.laisky.com/uploads/2023/04/tpm-pcr-number.png)
+
+[SRTM](@tpm-srtm)/[LCP](@lcp):
+
+- PCR0 – CRTM, BIOS code, and Host Platform Extensions[a]
+- PCR1 – Host Platform Configuration
+- PCR2 – Option ROM Code
+- PCR3 – Option ROM Configuration and Data
+- PCR4 – IPL (Initial Program Loader) Code (usually the Master Boot Record – MBR)
+- PCR5 – IPL Code Configuration and Data (for use by the IPL Code)
+- PCR6 – State Transition and Wake Events
+- PCR7 – Host Platform Manufacturer Control
+
+[DRTM](@tpm-drtm)/[MLE](@mle):
+
+- PCR17 – DRTM and launch control policy
+- PCR18 – Trusted OS start-up code (MLE)
+- PCR19 – Trusted OS (for example OS configuration)
+- PCR20 – Trusted OS (for example OS Kernel and other code)
+- PCR21 – as defined by the Trusted OS
+- PCR22 – as defined by the Trusted OS
+
+### TPM PCR Bank
+
+假如一个 TPM 芯片支持 24 的 PCRs，它在逻辑上会显示为 SHA-256、SHA-384 两个 banks，
+且每一个 bank 都有 24 个 PCRs。
+但实际上你只能选用一个 bank，修改任何 bank 内的 PCR，都会影响到所有 banks 中具有相同索引值的 PCR。
+
+### TPM Seeds
+
+TPM 2.0 不再直接保存 SRK 等密钥，而是存储三个 seeds：storage seed、endorsement seed、platform seed。
+这三个 seed 作为烧录进硬件的私钥，根据用户传入的 template 可以派生出无数个 primary key。
+用户派生的 primary key 默认存储于易失介质中，掉电就会丢失，用户也可以通过 FLUSH 手动清除。
+用户可以将数量有限的 primary key 保存在持久化介质中。
+
+这些 primary key 可以视为 TPM 1.2 中的 EK 和 SRK。
+可以认为，TPM 2.0 是 TPM 1.2 的超集，等效于 N 个 TPM 1.2。
 
 ### TPM SRK
 
@@ -4330,7 +4471,10 @@ TPM 为每个用户生成一个 SRK，用来加密存储持久化数据。
 
 静态度量, TPM Static Root of Trust for Measurements
 
-静态度量通常指在运行环境初装或重启时对其镜像的度量。度量是逐级的，通常先启动的软件对后一级启动的软件进行度量，度量值验证成功则标志着可信链从前一级软件向后一级的成功传递。以操作系统启动为例，可信操作系统启动时基于硬件的可信启动链，对启动链上的 UEFI、loader、OS 的 image 进行静态度量，静态度量的结果通过云上可信管理服务来验证，以判断系统是否被改动。
+静态度量指的是从机器启动之初到 OS 启动的这个过程中，对各个阶段的系统状态进行度量，并将度量值存储在 TPM 的 [PCR](@tpm-pcr) 中。
+每一个 PCR 都对应一个 SHA-256/384 的哈希值，
+这个哈希值由从启动之初至今的全部度量数据计算得出（即后一个 PCR 会包含前面所有 PCR 的度量数据）。
+所有的 PCR 组成了一个信任链，用来证明系统启动过程中的完整性。
 
 ### TPM TS
 
