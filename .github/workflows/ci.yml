@@ -29,7 +29,13 @@ jobs:
         uses: actions/cache@v3
         with:
           path: /go
-          key: ${{ runner.os }}-primes
+          key: ${{ runner.os }}-primes-go
+      -
+        name: Cache python dependencies
+        uses: actions/cache@v3
+        with:
+          path: /root/.cache
+          key: ${{ runner.os }}-primes-py
       -
         name: Build and push latest
         uses: docker/build-push-action@v4
