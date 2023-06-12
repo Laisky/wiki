@@ -489,11 +489,65 @@ ARM TrustZone Advanced Microcontroller Bus Architecture
 
 ARM TrustZone Non-Secure Bit
 
+### ARM TrustZone NSC
+
+(arm-trustzone-nsc)=
+
+ARM TrustZone None Secure Callable
+
+在非安全世界提供了一组进入安全世界的固定入口实现了从非安全世界进入安全世界的通道。
+NSC 内可以通过 [SG](@arm_tz_sg) 指令进入安全世界。
+
+NSC 区域用于从非安全世界进入安全世界，这部分的代码能够被非安全世界调用但要遵循一定的规则。
+NSC 区域由 `SAU（Security Attribution Unit）`或 `IDAU（Implementation Defined Atrtribute Unit）`定义。
+
+### ARM TrustZone NSW
+
+(arm_tz_nsw)=
+
+ARM TrustZone None Secure World
+
+ARM TrustZone 的非安全世界，用于运行普通的代码，和 [SW](@arm_tz_sw) 相对。
+
+### ARM TrustZone REE
+
+Rich Execution Environment
+
+Arm 的 TrustZone 设计中，在硬件上新增了一个更高的运行级别，称为 Secure World，用于运行安全的代码，而原来的运行级别称为 Non-Secure World，用于运行普通的代码。Secure World 和 Non-Secure World 之间的通信通过 TrustZone 的硬件机制进行隔离，Secure World 中的代码无法访问 Non-Secure World 中的内存，反之亦然。Secure World 中的代码可以访问 Non-Secure World 中的内存，但是需要通过 TrustZone 的硬件机制进行访问，这样就可以保证 Secure World 中的代码无法直接访问 Non-Secure World 中的内存。
+
+Non-Secure 内核称为 REE，Secure 内核称为 TEE。
+
+![ree](https://s3.laisky.com/uploads/2023/05/arm-ree.png)
+
 ### ARM TrustZone SCR
 
-(arm-trustzone-scr)=
+(arm_tz_scr)=
 
 ARM TrustZone Secure Configuration Register
+
+SCR 的第 33 位（NS Bit）用于表示 CPU 当前所处的状态
+
+### ARM TrustZone SG
+
+(arm_tz_sg)=
+
+ARM TrustZone Secure Gateway
+
+### ARM TrustZone SMC
+
+(arm_tz_smc)=
+
+Secure Monitor Call
+
+非安全世界向安全世界发起的系统调用。
+
+### ARM TrustZone SW
+
+(arm_tz_sw)=
+
+ARM TrustZone Secure World
+
+ARM TrustZone 的安全世界，用于运行安全代码。和 [NSW](@arm_tz_nsw) 相对。
 
 ### ASA
 
@@ -504,6 +558,14 @@ Algorithm Substitution Attack
 用来伪造加密结果、签名等。
 
 - [Algorithm Substitution Attacks from a Steganographic Perspective.pdf](https://arxiv.org/abs/1708.06199)
+
+### ASIC
+
+(asic)=
+
+专用集成电路 ASIC, Application-Specific Integrated Circuit
+
+为解决特定应用问题而定制设计的集成电路
 
 ### ASLR
 
@@ -525,7 +587,7 @@ attested TLS
 
 地址转换服务，Address Translation Service
 
-多用于 虚拟地址/物理地址 的转换
+多用于内存 虚拟地址/物理地址 的转换
 
 ### AWS ARN
 
@@ -776,6 +838,20 @@ der 格式的二进制文件，内含一份被吊销的 x509 证书序列号列�
 
 CA 签发 CSR 后会生成一个证书，CA 的签发行为也表示该 CA 愿意为这个新证书背书。
 
+### CSRF
+
+(csrf)=
+
+Cross Site Request Forgery
+
+跨站请求伪造，一种常见的攻击手段。
+
+后端的 Web API 是希望用户在 Web 上发起的调用，
+但是攻击者可以通过伪造跨站请求，使得用户在不知情的情况下发起了请求。
+
+防御手段称为 CSRF Token，服务端在返回最初的 Web 页面时会用户设置一个随机 token，
+一般可以存放于一个自定义 Header 中。因为 [CORS 请求默认不会允许脚本读取自定义 Header](https://developer.mozilla.org/en-US/docs/Glossary/CORS-safelisted_response_header)。
+
 ### CT
 
 歧义：
@@ -883,6 +959,14 @@ Direct Anonymous Attestation
 数据脱敏
 
 对某些敏感信息通过脱敏规则进行数据的变形，实现敏感隐私数据的可靠保护。
+
+### DCT
+
+(term_dct)=
+
+Docker Content Trust
+
+可以使用公私钥对 docker 镜像进行签名，以保证镜像的可信性。
 
 ### DEK
 
@@ -1061,6 +1145,14 @@ fuse 就是保险丝。
 有时候也称为 HardWare Fuse、HW Fuse。
 
 注意不要和 [内存文件系统 FUSE](@term_fuse) 混淆。
+
+### EIP
+
+(eip)=
+
+Ethereum Improvement Proposal
+
+类似于 Pyhton 的 PIP，用于提出 Ethereum 的改进方案。
 
 ### ELF
 
@@ -2693,11 +2785,22 @@ Intel x86 硬件支持 [Intel VMM](@term_intel_vmm) 对 Ring0 的虚拟化操作
 
 Intel 通过 [VMCS](@term_intel_vmcs) 来管理 VMM 中的进程。
 
+### ISA
+
+(isa)=
+
+Industry Standard Architecture
+
+一种古老的 16-bit 总线设备，发源于 8-bit 的 IBM PC bus 和 16-bit 的 IBM AT bus。
+也曾试图过度到 32-bit，但是最终被 32-bit PCI 取代。
+
+（感觉 ISA 很多时候被用来指代那些 32-bit 甚至更低的古老设备）
+
 ### ISO
 
 (iso)=
 
-International Organization for Standardization
+International Organization for Standar·dization
 
 国际标准化组织
 
@@ -3001,6 +3104,14 @@ LinuX Container
 
 (term_m)=
 
+### MACI
+
+(maci)=
+
+Minimum Anti-Collusion Infrastructure
+
+基于 [ZKP](@zkp) 实现的链上匿名投票方案。
+
 ### Memory Curtaining
 
 (memory-curtaining)=
@@ -3179,6 +3290,14 @@ KMS 的性能更好，且可以通过 KMS-API 和 libdrm 供用户态程序调�
 - [GC](@gc)
 - [SS](@ss)
 
+### MSRP
+
+(msrp)=
+
+Manufacturer's Suggested Retail Price
+
+厂商建议零售价
+
 ### MSRs
 
 (term_msrs)=
@@ -3246,6 +3365,14 @@ Network Function Virtualization
 AWS 的硬件 TEE 解决方案
 
 - [Confidential computing: an AWS perspective](https://aws.amazon.com/blogs/security/confidential-computing-an-aws-perspective/)
+
+### NIZK
+
+(nizk)=
+
+Non-interactive zero-knowledge proofs
+
+非交互式零知识证明。
 
 ### NNTP
 
@@ -4018,6 +4145,14 @@ CPU 插槽。
 假设一个平台（Platform）上有多个 CPU（[Package](@term_package)），
 这些 CPU 在不同的插槽（Socket）上有多种不同的安装方法。
 
+### SoK
+
+(sok)=
+
+Systematization of Knowledge Papers
+
+如果论文标题以 `SoK: ` 开头，代表这是一篇综述性论文
+
 ### SPA
 
 (spa)=
@@ -4484,6 +4619,12 @@ TPM Software Stack Specifications
 
 时间 Petri 网，Timed Petri Net
 
+### TPU
+
+Tensor Processing Unit
+
+张量处理器，Google 为机器学习定制的专用芯片。
+
 ### TRNG
 
 (trng)=
@@ -4753,6 +4894,12 @@ Yubico 公司推出的便携式[加密固件](@hka)。
 
 由 S.Goldwasser、S.Micali 及 C.Rackoff 在 20 世纪 80 年代初提出的。
 它指的是证明者能够在不向验证者提供任何有用的信息的情况下，使验证者相信某个论断是正确的。
+
+两个参与者：证明者（Prover）和验证者（Verifier）。
+
+Prover 持有 witness，Verifier 向 Prover 提出 challenge，Prover 根据 challenge 和 wintness 计算 statement，Verifier 根据 statement 判断 Prover 是否持有 witness。
+
+传统 ZKP 需要双方多次交互，因为 Verifier 需要通过多次发送不同的 challenge 来降低 Prover 侥幸猜对的概率。而 [NIZK](@nizk) 允许双方仅交互一次。
 
 ### ZTN
 
