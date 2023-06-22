@@ -1,7 +1,6 @@
 ---
 title: "需求"
 url: "/projects/gpt/requirements"
-bookToC: false
 ---
 
 ## 概述
