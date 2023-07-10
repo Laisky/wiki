@@ -28,7 +28,7 @@ Ethical Considerations and Responsible Usage: When using GPTChat's casual chat, 
 
 Conclusion: GPTChat's casual chat opens up a world of possibilities, from language assistance and creative writing to personal assistants and problem-solving. Harnessing the power of this advanced language model, users can engage in interactive conversations and explore various use cases. By understanding how to utilize GPTChat effectively and responsibly, users can unlock its true potential in enhancing their experiences.
 
-<video src="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4" controls autoplay width="800">
+<video src="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4" controls width="800">
   <p>Your browser does not support the video tag</p>
   <p>open <a href="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4">https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4</a></p>
 </video>

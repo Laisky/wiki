@@ -17,7 +17,7 @@ the server will not save your password, so please remember your password.
 
 Current support file types: .md, .doc, .docx, .pdf, .ppt, .pptx.
 
-<video src="https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4" controls autoplay width="800">
+<video src="https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4" controls width="800">
   <p>Your browser does not support the video tag</p>
   <p>open <a href="https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4">https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4</a></p>
 </video>
