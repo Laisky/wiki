@@ -1,6 +1,6 @@
 ---
-title: "GPTChat"
-url: "/projects/gpt"
+title: "Tutorial"
+url: "/projects/gpt/tutorial"
 bookToC: false
 ---
 
