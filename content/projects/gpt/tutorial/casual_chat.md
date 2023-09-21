@@ -39,3 +39,8 @@ Key Features:
 you can add https urls to your chat, the AI will read the content of the url before answering you.
 
 ![](https://s3.laisky.com/uploads/2023/09/chat-with-url.png)
+
+<video src="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4" controls width="800">
+  <p>Your browser does not support the video tag</p>
+  <p>open <a href="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4">https://s3.laisky.com/uploads/2023/09/chat-urls.mp4</a></p>
+</video>
