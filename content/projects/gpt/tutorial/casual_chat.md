@@ -13,9 +13,10 @@ Introduction: GPTChat, with its advanced natural language processing capabilitie
 
 Key Features:
 
-1. free to chat with GPT-3.5-turbo
-2. paid to chat with GPT-3.5-turbo-16k/GPT-4/GPT-4-32k
-3. free to chat with online HTTPS urls
+1. `free user` to chat with limit models and rate limit
+2. `paid user` to chat with unlimited models and no rate limit
+3. `own openai token` to chat with unlimited models and no rate limit
+4. free to chat with online HTTPS urls
 
 <video src="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4" controls width="800">
   <p>Your browser does not support the video tag</p>
