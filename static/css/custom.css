@@ -1,4 +1,3 @@
 body, markdown p {
     word-break: normal;
-    text-overflow: ellipsis;
 }
