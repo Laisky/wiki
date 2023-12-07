@@ -5,13 +5,17 @@ url: "/projects/gpt/txt-to-image"
 
 (page_file_image)=
 
-## Text To Image
+## Models
 
-Support models:
+text to image:
 
-* openai dall-e-3
+- openai dall-e-3
+- sdxl-turbo (free)
 
-generate image from text.
+image to image:
+
+- sdxl-turbo (free)
+- lcm (free)
 
 {{< hint info >}}
 Each image will take an average of 15 seconds to generate. Please be patient.

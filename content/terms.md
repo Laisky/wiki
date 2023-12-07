@@ -283,7 +283,7 @@ AMD SEV Secure Nested Paging
 
 - [AMD SEV-SNP- Strengthening VM Isolation with Integrity Protection and More.pdf](https://1drv.ms/b/s!Au45o0W1gVVLutdDDRh0G6_IEbiqTw?e=V66FdY)
 
-AMD 的新一代 [CVM](@term_cvm) 方案（相较于上一代的 [SEV](@amd-sev)）。
+AMD 的新一代 [CVM](@cvm) 方案（相较于上一代的 [SEV](@amd-sev)）。
 
 为虚拟机提供[内存](@term_amd_npt)一致性的安全保护。
 主要实现技术是 [RMP](@amd_rmp) 和 Page Validation。
@@ -323,7 +323,7 @@ VCEK 的公钥可在 AMD 官网 `https://kdsintf.amd.com` 下载
 
 AMD SEV VM Encryption Key
 
-为 [CVM](@term_cvm) 内存加密的 AES 密钥。
+为 [CVM](@cvm) 内存加密的 AES 密钥。
 
 ### AMD SEV VMPCK
 
@@ -450,7 +450,7 @@ Arm Confidential Compute Architecture
 
 (arm_realm)=
 
-ARM 的 [CVM](@term_cvm) 方案
+ARM 的 [CVM](@cvm) 方案
 
 ### ARM RME
 
@@ -609,6 +609,22 @@ AWS 对所有资源的唯一 URN。
 
 Basic Input/Output System
 
+### BitLocker FVEK
+
+(bitlocker_fvek)=
+
+Full Volume Encryption Key
+
+BitLocker 实际加密磁盘所使用的 AES 密钥，会被 [VMK](@bitlocker_vmk) 加密。
+
+![](https://s3.laisky.com/uploads/2023/12/FuhVDwHaIAAfNtO.jpeg)
+
+### BitLocker VMK
+
+(bitlocker_vmk)=
+
+用来加密 FVEK 的 AES 密钥，会被 [TPM](@tpm) sealing 加密。
+
 ### BTB
 
 (btb)=
@@ -644,6 +660,14 @@ Certificate Authority
 用户通过根证书所建立的信任链，可以校验派生出的中间 CA 和叶子证书。
 
 为了防止 CA 作恶，可以采用第三方的 [CT](@term_ct) 进行记录和监督。
+
+### CASB
+
+Cloud Access Security Broker
+
+> According to Gartner, a cloud access security broker (CASB) is an on-premises or cloud-based security policy enforcement point that is placed between cloud service consumers and cloud service providers to combine and interject enterprise security policies as cloud-based resources are accessed.
+
+可以理解为云时代的跳板机，负责审计和转发客户和云服务商之间的数据。
 
 ### CC
 
@@ -740,6 +764,15 @@ Confidentiality, Integrity and Availability
 
 衡量系统安全性的三个视角，一般来说 Integrity 是必须，设计时需要在机密性和可用性间进行权衡。
 
+### CIEM
+
+(ciem)=
+
+Cloud Infrastructure Entitlement Management
+
+在云上践行最小特权原则（the principle of least privilege），
+动态管理所有用户和资源的权限。
+
 ### CISA
 
 (gov_cisa)=
@@ -826,6 +859,16 @@ der 格式的二进制文件，内含一份被吊销的 x509 证书序列号列�
 云服务提供商 Cloud Service Providers
 
 在 [SGX](@intel_sgx) [DCAP](@intel-sgx-dcap) 语境中，指那些提供可信计算云服务（包括第三方[远程认证](@intel_sgx_remote_attestation)服务）
+
+### CSPM
+
+(cspm)=
+
+Cloud Security Posture Management
+
+- [What Is CSPM? - Palo Alto Networks](https://laisky.notion.site/What-Is-CSPM-Palo-Alto-Networks-bb9b5d66e9bc456485cc0a14b807f87f?pvs=4)
+
+CSPM 可以理解为中心化的管理中枢，监控所有的其他组件。
 
 ### CSR
 
@@ -917,15 +960,25 @@ UVA 的一大优点还在于，解决 [MMIO](@mmio) 难以支持多设备间共�
 
 ### CVM
 
-(term_cvm)=
+(cvm)=
 
 加密计算虚拟机, Confidential Virtual Machine
+
+同义词：
+
+- [TVM](@tvm)
 
 方案包括：
 
 - [AMD SEV-SNP](@amd_sev_snp)
 - [Intel TDX](@intel-tdx)
 - [ARM Realm](@arm_realm)
+
+### CWPP
+
+Cloud Workload Protection Platforms
+
+CWPP 专注于工作节点的防控，一般是 agent 形式。
 
 ## D
 
@@ -1002,6 +1055,15 @@ Windows 设备健康检查。对 TPM 等设备进行检查。
 
 - [国家医疗保障按病种分值付费（DIP）技术规范.pdf](https://1drv.ms/b/s!Au45o0W1gVVLusIFUFkzDp8CPmczmA?e=nx1iaq)
 
+### DKG
+
+(dkg)=
+
+Distributed Key Generation
+
+分布式密钥生成，和传统 [SSS](@sss) 不同的地方在于，不依赖于一个[可信第三方](@ttp)执行密钥中心化生成和分发，
+而是各个参与者通过协商直接生成密钥分片。
+
 ### DMA
 
 (dma)=
@@ -1014,11 +1076,36 @@ Direct Memory Access
 使得 CPU 可以不需要浪费计算周期去等待数据就绪。
 主要负责和外设交互，在主存和外设间拷贝内存数据。
 
-### DoS
+### DMTF
 
-拒绝服务攻击，Deny of Service
+(dmtf)=
+
+Distributed Management Task Force
+
+- <https://www.dmtf.org/about>
+
+一个 IT 标准化组织。
+
+### DOS
+
+歧义：
+
+- [Deny of Service](@dos)
+- [Disk Operating System](@dos_1)
+
+#### Deny of Service
+
+(dos)=
+
+拒绝服务攻击
 
 攻击者让服务失能，无法在正常运行。
+
+#### Disk Operating System
+
+(dos_1)=
+
+磁盘操作系统，被 [GPT](@gpt) 所取代。
 
 ### DRG
 
@@ -1060,6 +1147,12 @@ Linux 渲染子程序，基于 [KMS](@kms) 在内核中实现显示渲染。
 ### DRTM
 
 Dynamic Root of Trust Measurement
+
+### DSPM
+
+(dspm)=
+
+云上数据安全防护，Data Security Posture Management
 
 ## E
 
@@ -1284,6 +1377,19 @@ Fully Qualified Domain Name
 
 通过加密门电路的方式完成隐私计算
 
+### GDPR
+
+(gdpr)=
+
+欧盟数据安全法，General Data Protection Regulation
+
+类似的数据安全法规还有：
+
+- Health Insurance Portability and Accountability Act (HIPAA)
+- Gramm-Leach-Bliley Act (GLBA)
+- the Payment Card Industry Data Security Standard ([PCI DSS](@pci_dss))
+- California Consumer Privacy Act (CCPA)
+
 ### GDT
 
 (term_gdt)=
@@ -1319,6 +1425,8 @@ Graphics Execution Manager
 
 ### GPGPU
 
+(gpgpu)=
+
 通用 GPU，Gernal Prupose GPU
 
 ### GPR
@@ -1329,7 +1437,17 @@ Gernal Purpose Registers
 
 见 [Register](@term_register)
 
+### GPT
+
+(gpt)=
+
+GUID Partition Table
+
+GUID 分区表，是一种支持更大磁盘空间、更多分区的新一代磁盘分区表，用于替代 [MBR](@mbr)/[DOS](dos_1)。
+
 ### GPU
+
+(gpu)=
 
 图形处理器，Graphics Processing Units
 
@@ -1593,6 +1711,15 @@ HSM Manufacturer Key Backup Key
 
 HSM 固件内置的设备 Root Key，不可读取，可用于派生硬件绑定的密钥。
 
+### HTSS
+
+(htss)=
+
+Hierarchical Threshold Signature Scheme
+
+是 [TSS](@term_threshold_signature_scheme) 的增强，
+为每一个 share 都赋予 rank，使得 share 之间不再对等，而是有了等级之分。
+
 ### HVA
 
 (term_host_virtual_addr)=
@@ -1660,6 +1787,12 @@ SGX 文档里会提到 RootKey 被存在 HW Fuse 里，实际上都是指 [efuse
 
 [AMD SEV](@amd-sev) 的套皮，把加密固件换成了 SM。
 
+### Hygon DCU
+
+(hygon_dcu)=
+
+Hygon Deep Computing Unit，海光的 [GPGPU](@gpgpu)。
+
 ### HyperEnclave
 
 (term_hyperenclave)=
@@ -1717,11 +1850,43 @@ firmware 中的第一个代码块，是 CPU 通过 reset vector 完成初始化�
 
 IBM Protected Execution Facility
 
+### ICL
+
+(icl)=
+
+in-contxt learning
+
+指语言大模型（LLM）对 prompt 上下文的表现出的理解力。
+
+### IDE
+
+(ide)=
+
+Integrity and Data Encryption
+
 ### IEC
 
 (iec)=
 
 International Electrotechnical Commission
+
+### IERS
+
+(iers)=
+
+International Earth Rotation and Reference Systems Service
+
+负责根据地球自转管理 UTC 时间的机构。
+
+因为地球旋转越来越慢，为了弥补 UTC 和 原子钟间的时差，IERS 每年评估两次，是否要为 UTC 增加一个闰秒（leap second）。
+
+### Initrd
+
+(initrd)=
+
+initial ramdisk
+
+在系统启动时，在内存中运行的文件系统，用于加载 kernel。
 
 ### Intel ACM
 
@@ -2669,13 +2834,19 @@ TAA 漏洞的本质就是通过占满缓存，让目标数据被 cache evict，�
 
 ![taa-attack](https://s3.laisky.com/uploads/2022/06/taa-attack.png)
 
+### Intel TD
+
+(intel_td)=
+
+Intel® Trutst Domain
+
 ### Intel TDX
 
 (intel-tdx)=
 
 Intel® Trust Domain eXtensions
 
-Intel 的 [CVM](@term_cvm) 方案。
+Intel 的 [CVM](@cvm) 方案。
 
 基于 [Intel MKTME](@intel_mktme) 的 VMM 内存加密技术，为每一个虚拟机都提供独立的内存透明加密密钥。
 还支持基于 [Intel SGX](@intel_sgx) 的远程认证。类似于 [AMD SEV](@amd-sev)。
@@ -2826,19 +2997,19 @@ IO 权限级别，Input/Output Privilege Level
 
 见[HPD](@term_hpd)。
 
-### IoDC
-
-(iodc)=
-
-数据和计算的互联网, Internet of Data and Computing
-
-由 BaseBit 提出的概念
-
 ### ISMS
 
 (isms)=
 
 信息安全管理体系, Information Security Management System
+
+### ISOC
+
+(isoc)=
+
+Information Security Operations Center
+
+是 [SOC](@soc_team) 的同义词
 
 ### ISR
 
@@ -3179,6 +3350,14 @@ Minimum Anti-Collusion Infrastructure
 
 消息认证码，一般为消息体的哈希，用于计算消息完整性。
 
+### MBR
+
+(mbr)=
+
+Master Boot Record
+
+主引导记录，位于磁盘的第一个扇区，用于引导操作系统。被 [GPT](@gpt) 取代。
+
 ### MBZ
 
 Must Be Zero
@@ -3381,6 +3560,14 @@ Network News Transfer Protocol
 ### NSA
 
 美国国家安全局, National Security Agency
+
+### NTP
+
+(ntp)=
+
+Network Time Protocol
+
+NTP 协议用来在不可靠的网络上同步时钟。
 
 ### NVIDIA APM
 
@@ -3862,6 +4049,14 @@ Remote Authentication Dial-In User Service, 远程用户认证服务
   - <https://github.com/google/go-attestation>
 - [SGX Remote Attestation](@intel_sgx_remote_attestation)
 
+### RAG
+
+(rag)=
+
+Retrieval-Augmented Generation
+
+在 LLM 中，RAG 指借助 embeddings 向量数据库（vector db）等方式实现的，依赖外部知识库的文本生成。
+
 ### RATLS
 
 (ratls)=
@@ -4017,6 +4212,20 @@ System Call Interface
 
 见 [syscall](@term_syscall)
 
+### SDL
+
+(sdl)=
+
+Secure Development Lifecycle, 安全开发生命周期
+
+（有时候也称为 SDLC，LifeCycle）
+
+- [Secure Development Lifecycle: The essential guide to safe software pipelines](https://techbeacon.com/security/secure-development-lifecycle-essential-guide-safe-software-pipelines)
+
+> the SDL is a process that standardizes security best practices across a range of products and/or applications.
+
+2002 年由微软发布的概念，可以简单理解为开箱即用的安全最佳实践。
+
 ### SFI
 
 (term_sfi)=
@@ -4132,6 +4341,21 @@ Simultaneous Multi-Threading
 
 ### SoC
 
+歧义：
+
+- [Security Operations Center](@soc_team)
+- [System On Chip](@soc)
+
+#### Security Operations Center
+
+(soc_team)=
+
+- [What is a Security Operations Center (SOC)](https://www.ibm.com/topics/security-operations-center)
+
+24 小时安全响应团队，也称为 [ISOC](@isoc)
+
+#### System On Chip
+
 (soc)=
 
 系统级芯片 System On Chip
@@ -4151,7 +4375,7 @@ CPU 插槽。
 
 Systematization of Knowledge Papers
 
-如果论文标题以 `SoK: ` 开头，代表这是一篇综述性论文
+如果论文标题以 `SoK:` 开头，代表这是一篇综述性论文
 
 ### SPA
 
@@ -4189,6 +4413,16 @@ Serial Peripheral Interface
 
 - [对称可搜索加密技术研究进展.pdf](https://1drv.ms/b/s!Au45o0W1gVVLutwxKAu9O7Ve5zA1UQ?e=vG0ZD7)
 
+### SSN
+
+(ssn)=
+
+Social Security Number
+
+相当于美国的身份卡号
+
+> a nine-digit number that the United States government issues to U.S. citizens and eligible residents.
+
 ### SSS
 
 (sss)=
@@ -4198,6 +4432,16 @@ Shamir's Secret Sharing
 一种密钥分享算法，假设有 L 个参与者，可以设定当人数大于等于 K（K 小于 L）时，即可还原出密钥。
 
 属于 [Threshold Cryptosystem](@tc2) 的一种具体实现。
+
+### STM
+
+(stm)=
+
+Software Transactional Memory
+
+- [Wiki: Software transactional memory](https://en.wikipedia.org/wiki/Software_transactional_memory)
+
+软件事务内存（STM）是一种类似于数据库事务的并发控制机制，用于控制并发计算中对共享内存的访问。它是锁定同步的替代方案。STM 是一种在软件中实现的策略，而不是作为硬件组件存在。
 
 ### STRIDE
 
@@ -4219,6 +4463,15 @@ Shamir's Secret Sharing
 Starting Variable
 
 是 [IV](@iv) 的同义词。
+
+### SVSM
+
+(svsm)=
+
+Secure VM Service Module
+
+利用 [AMD SEV-SNP](@amd_sev_snp) 的 [VMPL](@amd_sev_vmpls) 技术，
+可以在 CVM 内以 VMPL0 权限运行一个特权管理器，拦截监听 VM 的一切 syscall 和内存操作。
 
 ### Syscall
 
@@ -4349,6 +4602,61 @@ Trusted Computing Group
 Trusted Cryptography Module
 
 对标 [TPM](@tpm)，属于中国自主可信计算系列产品。
+
+### TDISP
+
+(tdisp)=
+
+TEE Device Interface Security Protocol
+
+为了解决传统 [CVM](@cvm) 加密内存和外设间通过 shared memory（bounce buffer）共享的低效问题，
+同时也是为了解决 CVM 和 PCIe 外设间的加密通讯问题。AMD 和 PCI SIG 共同协作推出了 TDISP。
+
+TDISP 使得受信任的外设可以直接操作 CVM 内的 private memory，从而提高了 I/O 性能。
+
+![](https://s3.laisky.com/uploads/2023/07/trust-device-access.png)
+
+设备（DSM）可以被定义为多个 TDIs，然后这些 TDIs 可以被分配给 CVM，
+被 CVM 视为可信设备，直接操作 CVM 的 private memory。
+
+![](https://s3.laisky.com/uploads/2023/07/tdisp.png)
+
+### TDISP DSM
+
+(dsm)=
+
+Device Security Module
+
+[TDISP](@tdisp) 中，受信任的外部设备称为 DSM。
+每一个 DSM 可以创建一个或多个 [TDI](@tdi)。
+
+### TDISP SPDM
+
+(spdm)=
+
+Secure Protocol and Data Model
+
+TDISP 中，TSM 和 DSM 间的可信通讯协议。
+
+### TDISP TDI
+
+(tdi)=
+
+TEE Device Interfaces
+
+[TDISP](@tdisp) 中，[DSM](@dsm) 可以创建多个 TDI，
+TDI 可以绑定到 CVM 中。
+
+### TDISP TSM
+
+(tsm)=
+
+TEE Security Module
+
+> which is responsible for configuration of the host isolation controls
+> protecting guests from the Virtual Machine Monitor (VMM) and other host software.
+> The TSM also drives the lifecycle of a TDISP enabled device through the configuration,
+> binding, and unbinding of TDIs to guests.
 
 ### TECC
 
@@ -4643,6 +4951,7 @@ Tensor Processing Unit
 
 - [Task State Segment](@term_task_state_segment)
 - [TCG Software Stack](@term_tcg_software_stack)
+- [Threshold Signature Scheme](@term_threshold_signature_scheme)
 
 #### Task State Segment
 
@@ -4658,6 +4967,13 @@ Tensor Processing Unit
 
 为操作系统和应用软件提供使用 [TPM](@tpm) 的接口
 
+### Threshold Signature Scheme
+
+(term_threshold_signature_scheme)=
+
+门限签名方案，将私钥拆分为 N 份，只要其中 M 份同意，
+就可以生成签名。
+
 ### TTM
 
 (ttm)=
@@ -4671,6 +4987,14 @@ Translation Table Manager
 (ttp)=
 
 可信第三方，Trusted Third Party
+
+### TVM
+
+(tvm)=
+
+TEE VM
+
+见 [CVM](@cvm)。
 
 ## U
 
@@ -4697,6 +5021,12 @@ Universal Authentication Framework
 Unix Domain Socket
 
 Unix 通过文件系统路径提供的 socket 服务，一般仅用于本机的跨进程通讯。
+
+### UEBA
+
+(ueba)=
+
+User and Entity Behavior Analytics
 
 ### UEFI
 
@@ -4748,6 +5078,14 @@ Systemd Unified Kernel Image
 User Mode Setting
 
 用户态运行的 [MS](@mode_settings)
+
+### USNO
+
+(usno)=
+
+US Naval Observatory
+
+负责根据原子钟为 GPS 系统提供时间的组织，全球的 NTP 服务器大多都会从 GPS 信号中获取时间。
 
 ## V
 

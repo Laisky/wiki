@@ -4,29 +4,28 @@ url: "/projects/gpt/tutorial"
 bookToC: false
 ---
 
-## Concept
+## Introduction
 
 <https://chat.laisky.com>
 
-This is a web application based on openai chatgpt, which supports casual chat based on gpt-3.5/4 and file chat based on user files.
-
-Feel free to contact me if you have any questions: <chatgpt@laisky.com>.
+Welcome to the web application based on OpenAI ChatGPT! This application allows you to engage in casual chat using the powerful GPT-3.5/4 language model, as well as conduct file-based chats using your own files. If you have any questions or need assistance, feel free to reach out to me at <chatgpt@laisky.com>.
 
 ## Features
 
-- [Casual Chat](@page_casual_chat)
-- [File Chat / Q&A](@page_file_chat)
-- [Text to Image](@page_file_image)
+This application offers several exciting features:
+
+- [Casual Chat](@page_casual_chat): Engage in casual conversations using GPT-3.5/4.
+- [File Chat / Q&amp;A](@page_file_chat): Have file-based chats and ask questions.
+- [Text to Image](@page_file_image): Convert text into images.
 
 ## Free User
 
-Every new user will auto generate a unique token for free,
-which can be used to chat with GPT-3.5-turbo.
+As a new user, you will automatically receive a unique token for free. This token allows you to chat with GPT-3.5-turbo.
 
 ![free token](https://s3.laisky.com/uploads/2023/09/free-token.png)
 
-Support 3 different kinds of token:
+There are three types of tokens you can use:
 
-1. `FREETIER-*`: free token, use with rate limit
-2. your own openai token: unlimited use
-3. paid token: unlimited use
+1. `FREETIER-*`: Free token with rate limits.
+2. Your own OpenAI token: Unlimited usage.
+3. Paid token: Unlimited usage.

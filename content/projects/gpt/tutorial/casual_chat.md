@@ -5,43 +5,51 @@ url: "/projects/gpt/casual-chat"
 
 (page_casual_chat)=
 
-## Chat
+## Let's Chat
 
 <https://chat.laisky.com>
 
-Introduction: GPTChat, with its advanced natural language processing capabilities, offers exciting possibilities in conversational AI.
+Welcome to GPTChat! Dive into the world of conversational AI with our language wizard that makes chatting a breeze.
 
-Key Features:
+🚀 Key Features:
 
-1. `free user` to chat with limit models and rate limit
-2. `paid user` to chat with unlimited models and no rate limit
-3. `own openai token` to chat with unlimited models and no rate limit
-4. free to chat with online HTTPS urls
+1. **Free Users:** Enjoy chatting with limited models. Fair usage rate limits apply - but still lots of fun!
+2. **Paid Users:** Unlock the full potential with unlimited models and no rate limits – talk to your heart's content!
+3. **Own OpenAI Token?** Great! Get the same unlimited access as paid users without extra cost.
+4. **Online HTTPS URLs:** Spice up the conversation by chatting with freely accessible online HTTPS URLs.
+
+Need a visual? Check out our video guide:
 
 <video src="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4" controls width="800">
-  <p>Your browser does not support the video tag</p>
-  <p>open <a href="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4">https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4</a></p>
+  <p>Doesn't look like your browser likes videos. No worries, click here instead: <a href="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4">Video Demo</a></p>
 </video>
 
-## Conservation
+_Don’t see the video? [Click here to watch it](https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4)_
 
-![conservation](https://s3.laisky.com/uploads/2023/07/wiki-chat.png)
+## Keep the Conversation Going
 
-### Select Chat Models
+![Conservation Tip](https://s3.laisky.com/uploads/2023/07/wiki-chat.png)
 
-![select chat models](https://s3.laisky.com/uploads/2023/07/wiki-chat-models.png)
+### Picking Your Chat Companion
 
-## Advance Configurations
+![Choose Your Model](https://s3.laisky.com/uploads/2023/07/wiki-chat-models.png)
 
-![advance configuration](https://s3.laisky.com/uploads/2023/07/wiki-chat-config.png)
+## Advanced Settings
 
-## Chat with online URLS
+For those who like to fine-tune their experience, check out the advanced configurations:
 
-you can add https urls to your chat, the AI will read the content of the url before answering you.
+![Advanced Configuration](https://s3.laisky.com/uploads/2023/07/wiki-chat-config.png)
 
-![](https://s3.laisky.com/uploads/2023/09/chat-with-url.png)
+## Enhanced Chat with URLs
+
+Want the AI to consider content from a website? Simply add an HTTPS URL to your chat:
+
+![Chat With URLs](https://s3.laisky.com/uploads/2023/09/chat-with-url.png)
+
+Here’s how it looks in action! (Video might not be supported by all browsers.)
 
 <video src="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4" controls width="800">
-  <p>Your browser does not support the video tag</p>
-  <p>open <a href="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4">https://s3.laisky.com/uploads/2023/09/chat-urls.mp4</a></p>
+  <p>Ouch! Video not playing? Fret not, click on this link instead: <a href="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4">Video URL Guide</a></p>
 </video>
+
+_Don’t see the video? [Click here to watch it](https://s3.laisky.com/uploads/2023/09/chat-urls.mp4)_
