@@ -2725,7 +2725,7 @@ SGX 提供了两组内置的密钥给 enclave 用来加解密：
 
 {{< hint warning >}}
 ⚠️ 注意：[Sealing Key](@intel_sgx_sk) 是由 CPU 生成的，相同 enclave 在不同机器上会拿到不同的值。
-{{< /hint >}}
+{{</ hint >}}
 
 ### Intel SGX SECS
 

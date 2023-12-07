@@ -51,7 +51,7 @@ To chat away, make sure you wield the same password you used during your chatbot
 
 {{< hint warning >}}
 A word to the wise: forget your password and you're locked out of your previous datasets and chatbot, forever. So remember it well!
-{{< hint >}}
+{{</ hint >}}
 
 ## Sharing Your Chatbot
 
@@ -59,7 +59,7 @@ Fancy letting others chat with your bot? Generate a shareable link and spread th
 
 {{< hint warning >}}
 Heads up! Sharing blows the doors open to all the bot's related data files, sparing only the original file. That means all training datasets and the chat model are out in the open.
-{{< hint >}}
+{{</ hint >}}
 
 Your original file remains your encrypted secret. Link bearers can chat with your bot but won't see the source material. Want them to peek behind the curtain? That's where your password comes into play – share at your discretion.
 
