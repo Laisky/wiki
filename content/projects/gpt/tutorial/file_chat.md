@@ -1,5 +1,5 @@
 ---
-title: "FileChat/Q&A"
+title: "File Chat"
 url: "/projects/gpt/file-chat"
 ---
 
