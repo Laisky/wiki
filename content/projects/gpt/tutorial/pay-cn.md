@@ -1,6 +1,6 @@
 ---
 title: "Pay"
-url: "/projects/gpt/pay-cn"
+url: "/projects/gpt/pay/cn"
 bookhidden: true
 ---
 
@@ -37,11 +37,12 @@ bookhidden: true
 
 填入你的 apikey 后刷新页面，即可解锁所有功能。
 
+![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
+
 ### 第三方使用
 
 需要第三方自定义 apibase，填入 `https://oneapi.laisky.com` 和你的 apikey 即可。
 
-![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
 
 一些第三方产品的示例:
 

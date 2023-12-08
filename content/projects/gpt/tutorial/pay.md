@@ -36,11 +36,12 @@ The easiest way is to go to [https://chat.laisky.com/](https://chat.laisky.com/)
 
 After you enter your API key, just refresh the page, and voila! All features are unlocked. 🎊
 
+![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
+
 ### Third-Party Usage
 
 For third-party usage, set up a custom API base using `https://oneapi.laisky.com` and your API key.
 
-![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
 
 Check out these third-party products:
 
