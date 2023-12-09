@@ -31,6 +31,10 @@ bookhidden: true
 
 ## 使用方式
 
+### 获取 token
+
+![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
+
 ### 网页使用
 
 最简单的方式就是在 <https://chat.laisky.com/> 右上角填入你的 apikey 使用。
