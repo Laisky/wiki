@@ -33,7 +33,7 @@ bookhidden: true
 
 ### 获取 token
 
-![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
+![](https://s3.laisky.com/uploads/2023/12/oneapi-token.png)
 
 ### 网页使用
 
