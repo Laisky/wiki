@@ -18,11 +18,13 @@ pygmentsOptions = "linenos=table"
 [params]
   custom_css = [
     "https://s3.laisky.com/static/autocomplete/10.2.7/css/autoComplete.02.css",
+    "https://s3.laisky.com/static/videojs/8.6.1/video-js.css",
     "css/cross-site-search.css",
     "css/custom.css",
   ]
   custom_js = [
     "https://s3.laisky.com/static/autocomplete/10.2.7/autoComplete.min.js",
+    "https://s3.laisky.com/static/videojs/8.6.1/video.min.js",
     "js/cross-site-search.js",
   ]
 

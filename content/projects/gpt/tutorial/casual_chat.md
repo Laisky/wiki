@@ -20,11 +20,10 @@ Welcome to GPTChat! Dive into the world of conversational AI with our language w
 
 Need a visual? Check out our video guide:
 
-<video src="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4" controls width="800">
-  <p>Doesn't look like your browser likes videos. No worries, click here instead: <a href="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4">Video Demo</a></p>
+<video id="my-video" class="video-js" controls preload="auto" width="800" height="auto" data-setup="{}">
+    <source src="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4" type="video/mp4" />
+    <p class="vjs-no-js">Don't see the video? <a href="https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4">Click here to watch it</a></p>
 </video>
-
-_Don’t see the video? [Click here to watch it](https://s3.laisky.com/uploads/2023/07/wiki-chat-demo.mp4)_
 
 ## Keep the Conversation Going
 
@@ -48,8 +47,7 @@ Want the AI to consider content from a website? Simply add an HTTPS URL to your 
 
 Here’s how it looks in action! (Video might not be supported by all browsers.)
 
-<video src="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4" controls width="800">
-  <p>Ouch! Video not playing? Fret not, click on this link instead: <a href="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4">Video URL Guide</a></p>
+<video id="my-video" class="video-js" controls preload="auto" width="800" height="auto" data-setup="{}">
+    <source src="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4" type="video/mp4" />
+    <p class="vjs-no-js">Don't see the video? <a href="https://s3.laisky.com/uploads/2023/09/chat-urls.mp4">Click here to watch it</a></p>
 </video>
-
-_Don’t see the video? [Click here to watch it](https://s3.laisky.com/uploads/2023/09/chat-urls.mp4)_
