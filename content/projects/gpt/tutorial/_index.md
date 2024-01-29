@@ -18,6 +18,35 @@ This application offers several exciting features:
 - [File Chat / Q&amp;A](@page_file_chat): Have file-based chats and ask questions.
 - [Text to Image](@page_file_image): Convert text into images.
 
+## API Base
+
+`https://oneapi.laisky.com`
+
+Support Models:
+
+*On the left is the value of the model in the request parameters, and on the right is the actual model that will be invoked by the backend.*
+
+- `gpt-3.5-turbo-1106`
+- `gpt-3.5-turbo` -> `gpt-3.5-turbo-1106`
+- `gpt-3.5-turbo-16k` -> `gpt-3.5-turbo-1106`
+- `gpt-4-1106-preview`
+- `gpt-4-0125-preview`
+- `gpt-4-vision-preview`
+- `gpt-4-turbo-preview` -> `gpt-4-0125-preview`
+- `gpt-4` -> `gpt-4-1106-preview`
+- `gpt-4-32k` -> `gpt-4-1106-preview`
+- `gemini-pro`
+- `gpt-3.5-turbo-0301` -> `gemini-pro`
+- `gpt-3.5-turbo-16k-0613` -> `gemini-pro`
+- `gemini-pro-vision`
+- `text-davinci-003`
+- `dall-e-3`
+- `sdxl-turbo`
+- `tts-1`
+- `tts-1-hd`
+- `whisper-1`
+- `text-embeddings-3-small`
+
 ## Free User
 
 As a new user, you will automatically receive a unique token for free. This token allows you to chat with GPT-3.5-turbo.
