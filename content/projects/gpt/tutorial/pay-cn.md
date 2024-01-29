@@ -47,6 +47,8 @@ bookhidden: true
 
 需要第三方自定义 apibase，填入 `https://oneapi.laisky.com` 和你的 apikey 即可。
 
+（[点击查阅目前支持的模型](@gpt_chat_support_models)）
+
 
 一些第三方产品的示例:
 

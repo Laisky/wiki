@@ -4,6 +4,8 @@ url: "/projects/gpt/tutorial"
 bookToC: true
 ---
 
+(page_gptchat_tutorial)=
+
 ## Introduction
 
 <https://chat.laisky.com>
@@ -19,6 +21,8 @@ This application offers several exciting features:
 - [Text to Image](@page_file_image): Convert text into images.
 
 ## API Base
+
+(gpt_chat_support_models)=
 
 `https://oneapi.laisky.com`
 

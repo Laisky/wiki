@@ -42,6 +42,7 @@ After you enter your API key, just refresh the page, and voila! All features are
 
 For third-party usage, set up a custom API base using `https://oneapi.laisky.com` and your API key.
 
+[Click to view the currently supported documents](@gpt_chat_support_models)
 
 Check out these third-party products:
 
