@@ -1,7 +1,7 @@
 ---
 title: "Tutorial"
 url: "/projects/gpt/tutorial"
-bookToC: false
+bookToC: true
 ---
 
 ## Introduction
