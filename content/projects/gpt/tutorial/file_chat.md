@@ -15,10 +15,11 @@ Relax in knowing your uploads and all related data gets the VIP treatment – en
 
 Currently, we embrace file types like: .md, .doc, .docx, .pdf, .ppt, and .pptx.
 
-<video id="my-video" class="video-js" controls preload="auto" width="800" height="auto" data-setup="{}">
-    <source src="https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4" type="video/mp4" />
-    <p class="vjs-no-js">Don't see the video? <a href="https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4">Click here to watch it</a></p>
+<video src="https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4" controls width="800">
+  <p>Doesn't look like your browser likes videos. No worries, click here instead: <a href="https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4">Video Demo</a></p>
 </video>
+
+_Don’t see the video? [Click here to watch it](https://s3.laisky.com/uploads/2023/07/private-knowledge-base.mp4)_
 
 ## Building Your Chatbot
 

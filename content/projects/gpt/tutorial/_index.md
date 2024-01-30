@@ -20,11 +20,11 @@ This application offers several exciting features:
 - [File Chat / Q&amp;A](@page_file_chat): Have file-based chats and ask questions.
 - [Text to Image](@page_file_image): Convert text into images.
 
-## API Base
+## Models
 
 (gpt_chat_support_models)=
 
-`https://oneapi.laisky.com`
+API Base: `https://oneapi.laisky.com`
 
 Support Models:
 
@@ -50,6 +50,10 @@ Support Models:
 - `tts-1-hd`
 - `whisper-1`
 - `text-embeddings-3-small`
+
+### Pricing
+
+<https://openai.com/pricing>
 
 ## Free User
 

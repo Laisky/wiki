@@ -27,7 +27,8 @@ Free users can only generate 1 image per 10 minute.
 
 ## Vision
 
-<video id="my-video" class="video-js" controls preload="auto" width="800" height="auto" data-setup="{}">
-    <source src="https://s3.laisky.com/uploads/2023/11/dalle-and-vision.mp4" type="video/mp4" />
-    <p class="vjs-no-js">Don't see the video? <a href="https://s3.laisky.com/uploads/2023/11/dalle-and-vision.mp4">Click here to watch it</a></p>
+<video src="https://s3.laisky.com/uploads/2023/11/dalle-and-vision.mp4" controls width="800">
+  <p>Doesn't look like your browser likes videos. No worries, click here instead: <a href="https://s3.laisky.com/uploads/2023/11/dalle-and-vision.mp4">Video Demo</a></p>
 </video>
+
+_Don’t see the video? [Click here to watch it](https://s3.laisky.com/uploads/2023/11/dalle-and-vision.mp4)_
