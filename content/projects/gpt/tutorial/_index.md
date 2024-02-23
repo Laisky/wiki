@@ -44,12 +44,15 @@ Support Models:
 - `gpt-3.5-turbo-16k-0613` -> `gemini-pro`
 - `gemini-pro-vision`
 - `text-davinci-003`
+- `dall-e-2`
 - `dall-e-3`
 - `sdxl-turbo`
 - `tts-1`
 - `tts-1-hd`
 - `whisper-1`
-- `text-embeddings-3-small`
+- `test-embedding-ada-002`
+- `text-embedding-3-small`
+- `text-embedding-3-large`
 
 ### Pricing
 
