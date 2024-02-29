@@ -34,6 +34,14 @@ Authentication, Authorization, and Accounting
 
 64-bit ARM hardware (chip) architecture. Informally knows as "ARM 64".
 
+### ABC
+
+(abc)=
+
+Attribute Based Credential
+
+也称为 Anoncred(Anonymous Credential).
+
 ### ACM
 
 (acm)=
@@ -726,6 +734,12 @@ Microsoft Confidential Consortium Framework
 
 临床决策支持系统，Clinical Decision Support System
 
+### CF
+
+Catatrophic Forgetting
+
+指 LLM 学习新知识后会遗忘旧知识。反而导致性能降级。在 [ICL](@icl) 中也有体现，context 提供的信息越多，LLM 的指标反而可能会下降。
+
 ### CFI
 
 (term_cfi)=
@@ -851,6 +865,12 @@ CRI-O is an implementation of the CRI to enable using OCI compatible runtimes.
 der 格式的二进制文件，内含一份被吊销的 x509 证书序列号列表。
 
 一般以 `CRL URI` 的形式发布于证书中，tester 可以用这个地址下载 CRL 文件进行比对验证。
+
+### Commitment Schema
+
+Commitment Schema 是一种密码学协议，类似于签名，证明某个值的真实性，即使当前这个值的内容尚未披露。再未来披露这个值后，其他人可以使用当初的签名来验证这个值的真实性。
+
+最常用的有 Pedersen Commitment。
 
 ### CSP
 
@@ -1033,11 +1053,31 @@ Data Encrypt Key
 
 离散事件系统，Discrete Event Systems
 
+### DH
+
+(dh)=
+
+Diffie-Hellman 密钥的交换算法
+
+基于 [DLP](@dlp)，实现在非可信信道上协商出对称密钥。
+
+无法防御如 MITM 的 active attacker，建议使用 [ECDH](@ecdh)。
+
 ### DHA
 
 Device Health Attestation
 
 Windows 设备健康检查。对 TPM 等设备进行检查。
+
+### DIF
+
+(dif)=
+
+Decentralized Identity Foundation
+
+- <https://identity.foundation/>
+
+专注于分布式隐私身份认证。
 
 ### Differential Privacy
 
@@ -1063,6 +1103,16 @@ Distributed Key Generation
 
 分布式密钥生成，和传统 [SSS](@sss) 不同的地方在于，不依赖于一个[可信第三方](@ttp)执行密钥中心化生成和分发，
 而是各个参与者通过协商直接生成密钥分片。
+
+### DLP
+
+(dlp)=
+
+Discret Logarithm Problem 离散对数问题
+
+最常见的形式是 `$g^a \equiv b \mod p$`，已知 g、b、p（质数），求算 a？
+
+当 g、b、p 非常大时，该计算目前只能通过遍历求解，可以认为是无法在有效时间内被破解。
 
 ### DMA
 
@@ -1168,6 +1218,14 @@ Dynamic Root of Trust Measurement
 
 一种非对称加密算法，
 最常见的两种实现为 [ECDSA](@ecdsa) 和 [EdDSA](@eddsa)。
+
+### ECDH
+
+(ecdh)=
+
+Elliptic Curve Diffie-Hellman
+
+基于椭圆曲线的 DH 密钥交换算法，可以取代基于 [DLP](@dlp) 的 [DH](@dh)。
 
 ### ECDSA
 
@@ -1377,6 +1435,12 @@ Fully Qualified Domain Name
 
 通过加密门电路的方式完成隐私计算
 
+### GCD
+
+(gcd)=
+
+Greatest Common Divisior 最大公约数
+
 ### GDPR
 
 (gdpr)=
@@ -1439,9 +1503,20 @@ Gernal Purpose Registers
 
 ### GPT
 
-(gpt)=
+歧义：
 
-GUID Partition Table
+- [Generative Pre-trained Transformer](@gpt_chat)
+- [GUID Partition Table](@gpt)
+
+#### Generative Pre-trained Transformer
+
+(gpt_chat)=
+
+基于 Transformer 的预训练语言生成模型
+
+#### GUID Partition Table
+
+(gpt)=
 
 GUID 分区表，是一种支持更大磁盘空间、更多分区的新一代磁盘分区表，用于替代 [MBR](@mbr)/[DOS](dos_1)。
 
@@ -1854,7 +1929,7 @@ IBM Protected Execution Facility
 
 (icl)=
 
-in-contxt learning
+in contxt learning
 
 指语言大模型（LLM）对 prompt 上下文的表现出的理解力。
 
@@ -2725,7 +2800,7 @@ SGX 提供了两组内置的密钥给 enclave 用来加解密：
 
 {{< hint warning >}}
 ⚠️ 注意：[Sealing Key](@intel_sgx_sk) 是由 CPU 生成的，相同 enclave 在不同机器上会拿到不同的值。
-{{</ hint >}}
+{{< /hint >}}
 
 ### Intel SGX SECS
 
@@ -3282,6 +3357,21 @@ LinuX Container
 Minimum Anti-Collusion Infrastructure
 
 基于 [ZKP](@zkp) 实现的链上匿名投票方案。
+
+### MAST
+
+(mast)=
+
+Merkle Abstract Syntax Tree
+
+利用哈希树来实现降低签名和验签的计算复杂度：
+
+1. 更新数据时，只需要重新计算上游的哈希值
+2. 存储和传输时，只需要传输根节点的哈希值
+
+![](https://s3.laisky.com/uploads/2024/02/mast.png)
+
+此外，MAST 还支持 blind signature 和 selective disclosure。可以公布所有枝节点的哈希值，然后选择性披露叶子结点。
 
 ### Memory Curtaining
 
@@ -4055,7 +4145,7 @@ Remote Authentication Dial-In User Service, 远程用户认证服务
 
 Retrieval-Augmented Generation
 
-在 LLM 中，RAG 指借助 embeddings 向量数据库（vector db）等方式实现的，依赖外部知识库的文本生成。
+在 LLM 中，RAG 指借助 retriever 抓取外部数据，扩充用户 query，从而增强 LLM 能力的一项技术。
 
 ### RATLS
 
@@ -4064,6 +4154,12 @@ Retrieval-Augmented Generation
 Remote Attestion based TLS
 
 对 [TEE](@tee) 应用建立基于远程认证的 TLS 连接
+
+### RCG
+
+(rcg)=
+
+Retrieval-Centric Generation
 
 ### Register
 
@@ -4393,6 +4489,14 @@ Serial Peripheral Interface
 
 串行外围设备接口。是 Motorola 首先在其 MC68HCXX 系列处理器上定义的。SPI 接口主要应用在 EEPROM，FLASH，实时时钟，AD 转换器，还有数字信号处理器和数字信号解码器之间。SPI，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为 PCB 的布局上节省空间。
 
+### SRSA
+
+(srsa)=
+
+Strong RSA assumption
+
+简而言之，就是指 RSA 健壮性的假设，只要该假设仍然成立，RSA 就是可靠的。
+
 ### SS
 
 (ss)=
@@ -4409,9 +4513,34 @@ Serial Peripheral Interface
 
 ### SSE
 
-对称可搜索加密, Searchable Symmetric Encryption
+歧义：
+
+- [Searchable Symmetric Encryption](@searchable_symmetric_encryption)
+- [Streaming SIMD Extensions](@streaming_simd_extensions)
+
+#### Searchable Symmetric Encryption
+
+(searchable_symmetric_encryption)=
+
+对称可搜索加密
 
 - [对称可搜索加密技术研究进展.pdf](https://1drv.ms/b/s!Au45o0W1gVVLutwxKAu9O7Ve5zA1UQ?e=vG0ZD7)
+
+#### Streaming SIMD Extensions
+
+(streaming_simd_extensions)=
+
+流式 SIMD 扩展
+
+- [wikipedia](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)
+
+### SSI
+
+(ssi)=
+
+Self-Sovereign Identity
+
+个人掌管自己的数据和授权，而不再依赖第三方（如 Google Sign-In 等 [SSO](@sso)）。
 
 ### SSN
 
@@ -4422,6 +4551,14 @@ Social Security Number
 相当于美国的身份卡号
 
 > a nine-digit number that the United States government issues to U.S. citizens and eligible residents.
+
+### SSO
+
+(sso)=
+
+Single Sign-On
+
+利用中心化的登录和授权服务，用户只需要登录一次，就可以访问所有的应用。
 
 ### SSS
 
@@ -4800,6 +4937,19 @@ TPM 启动时度量的第一个东西被称为 CRTM。
 BIOS 启动时将会度量 BIOS，并将哈希值存入 [PCR](@tpm-pcr) 0 的位置，
 作为可信链的第一环。
 
+### TPM DAA
+
+(tpm_daa)=
+
+- [Direct Anonymous Attestation (DAA).pdf](https://1drv.ms/b/s!Au45o0W1gVVLvc10N120OY7Fp9Fmrw?e=kfI9LN)
+
+![](https://s3.laisky.com/uploads/2024/02/daa.png)
+
+Direct Anonymous Attestation，让 verifier 可以验证对方的设备可信的同时，不暴露 tester 的隐私。
+
+- Direct: 不依赖 [TTP](@ttp)，直接由 tester 向 verifier 证明
+- Anonumous: 不泄漏 tester 的身份标识，让 verifier 无法定位用户
+
 ### TPM DRTM
 
 (tpm-drtm)=
@@ -5148,6 +5298,12 @@ US Naval Observatory
 
 Virtualized Platform Working Group
 
+### VRF
+
+(vrf=)
+
+Virtual Routing and Forwarding
+
 ### vsyscall
 
 (term_vsyscall)=
@@ -5238,6 +5394,10 @@ Yubico 公司推出的便携式[加密固件](@hka)。
 Prover 持有 witness，Verifier 向 Prover 提出 challenge，Prover 根据 challenge 和 wintness 计算 statement，Verifier 根据 statement 判断 Prover 是否持有 witness。
 
 传统 ZKP 需要双方多次交互，因为 Verifier 需要通过多次发送不同的 challenge 来降低 Prover 侥幸猜对的概率。而 [NIZK](@nizk) 允许双方仅交互一次。
+
+### ZK-SNARK
+
+Zero-Knowledge Succinct Non-interactive ARgument of Knowledge
 
 ### ZTN
 
