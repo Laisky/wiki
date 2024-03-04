@@ -880,6 +880,14 @@ Commitment Schema 是一种密码学协议，类似于签名，证明某个值�
 
 在 [SGX](@intel_sgx) [DCAP](@intel-sgx-dcap) 语境中，指那些提供可信计算云服务（包括第三方[远程认证](@intel_sgx_remote_attestation)服务）
 
+### CSPRNG
+
+(csprng)=
+
+Cryptographically Secure Pseudo-Random Number Generator
+
+密码学安全的随机数生成器。Pseudo 主要是指其使用了确定性的随机数算法，之所以密码学安全是因为使用了无法预测的 seed （如 entropy）来确保产生无法预测的输出。
+
 ### CSPM
 
 (cspm)=
@@ -1059,15 +1067,28 @@ Data Encrypt Key
 
 Diffie-Hellman 密钥的交换算法
 
+有时候也叫做 DHKX、DHKE（DH Key Exchange）。
+
 基于 [DLP](@dlp)，实现在非可信信道上协商出对称密钥。
 
-无法防御如 MITM 的 active attacker，建议使用 [ECDH](@ecdh)。
+最常见的有两种：
+
+1. 提到 DH 时默认都是基于 RSA 的
+2. [ECDH](@ecdh): 基于 ECC
 
 ### DHA
 
 Device Health Attestation
 
 Windows 设备健康检查。对 TPM 等设备进行检查。
+
+### DHE
+
+(dhe)=
+
+Diffie-Hellman Ephemerical 使用临时私钥的密钥的交换算法
+
+每次都使用临时私钥，避免了长期私钥泄露的风险，实现了 [PFS](@pfs)
 
 ### DIF
 
@@ -1214,10 +1235,9 @@ Dynamic Root of Trust Measurement
 
 椭圆加密算法 Elliptic-curve cryptography
 
-和 RSA 相比最大的优先就是性能更好，且具有 [PFS](@pfs) 特性。
+和 RSA 相比最大的优先就是性能更好。
 
-一种非对称加密算法，
-最常见的两种实现为 [ECDSA](@ecdsa) 和 [EdDSA](@eddsa)。
+> [简要说明](https://t.me/laiskynotes/168)
 
 ### ECDH
 
@@ -1225,7 +1245,7 @@ Dynamic Root of Trust Measurement
 
 Elliptic Curve Diffie-Hellman
 
-基于椭圆曲线的 DH 密钥交换算法，可以取代基于 [DLP](@dlp) 的 [DH](@dh)。
+基于椭圆曲线的 DH 密钥交换算法，可以取代基于 RSA 的 [DH](@dh)。
 
 ### ECDSA
 
@@ -3150,6 +3170,14 @@ Join Technical Committee
 
 [Read More...](@page_secure_vm_kata)
 
+### KCA
+
+(kca)=
+
+Key Cancellation Attack
+
+在多方签名（multi-signature）场景中，如果一个多签算法存在 KCA 风险。那么任意一个参与者，可以利用其他参与者曾使用过的签名公钥，不需要其他参与者参加，就伪造出合法的聚合签名（aggregate signature）来。
+
 ### KDF
 
 (kdf)=
@@ -3914,9 +3942,9 @@ Object Identifier
 
 前向保密 Perfect Forward Secrecy
 
-当攻击者取得了私钥，是否可以解开历史上所有的通讯密文？
+每次协商密钥时都使用不同的私钥，这样即使攻击者窃取了私钥，也无法解密历史加密数据。
 
-RSA 不具有 PFS，[ECC](@ecc) 则有。
+密钥协商协议最常用的是 [DH](@dh)，而 DHE 就是 ephemeral 版的 DH，每次都基于不同的私钥，根本无所谓 RSA 还是 ECC。
 
 ### PGD
 
@@ -4031,6 +4059,14 @@ Parallel Programming Model
 - [SIMD](@simd)
 - [SIMT](@simt)
 - [SMT](@smt)
+
+### PRNG
+
+(prng)=
+
+Pseudo-Random Number Generator
+
+伪随机数生成器。其生成结果可以预测，不可用于密码学领域，参见 [CSPRNG](@csprng)。
 
 ### Process Image
 
