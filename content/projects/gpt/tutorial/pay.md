@@ -24,6 +24,8 @@ This is a non-profit project, and I do not earn any commissions or markup fees. 
 
 P.S. In practice, various LLM channels may offer different discounts, and some channels might even provide services for free. I will automatically select the channel offering the highest discount at the time. Please refer to the system logs for specific usage details.
 
+![](https://s3.laisky.com/uploads/2024/03/oneapi-charge.png)
+
 ## Refunds
 
 If you need a refund, just email me. We'll calculate the refund based on the market price when you added the funds. 📈
