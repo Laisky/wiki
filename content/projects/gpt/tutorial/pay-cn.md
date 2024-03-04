@@ -47,7 +47,7 @@ Ps. 实际使用时，不同的 LLM 渠道可能会存在不同的折扣，个�
 
 ### 第三方使用
 
-你必须通过我的网关来转发请求，而不能直接向 openai 发起请求。当你使用第三方 App 时，则必须在第三方 App 上同时设置 `API_BASE` 和 `API_KEY`。将 `API_BASE` 设置为我的网关地址 ` https://oneapi.laisky.com``，API_KEY ` 则填入你的 token。
+你必须通过我的网关来转发请求，而不能直接向 openai 发起请求。当你使用第三方 App 时，则必须在第三方 App 上同时设置 `API_BASE` 和 `API_KEY`。将 `API_BASE` 设置为我的网关地址 `https://oneapi.laisky.com`，API_KEY ` 则填入你的 token。
 
 （[点击查阅目前支持的模型](@gpt_chat_support_models)）
 
