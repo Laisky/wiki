@@ -7,7 +7,7 @@ url: "/projects/gpt/pay"
 
 ## Introduction 🎉
 
-*[(👉 中文版)](@page_gpt_pay_cn)*
+_[(👉 中文版)](@page_gpt_pay_cn)_
 
 Unlock all the cool features in two simple ways:
 
@@ -20,9 +20,9 @@ Please contact me by email: `chat@laisky.com`.
 
 First, create an account [here](https://oneapi.laisky.com/register). Then, tell me your account name. You can add funds to your account using WeChat, Alipay, or PayPal. 🏦 Since we don't have a direct payment method yet, we'll chat over email to arrange the transfer. 📧
 
-Don't worry, this is a non-profit project. I don't charge extra fees or make any profit. The exchange rate is based on the current US dollar market price plus a small fee for the transfer. 💸
+This is a non-profit project, and I do not earn any commissions or markup fees. The exchange rate is uniformly calculated at 8. Due to well-known reasons, cross-border payments to OpenAI are quite challenging, resulting in higher currency conversion costs, which are not fees charged for my services.
 
-Try not to add more than 100 RMB at a time. 💰
+P.S. In practice, various LLM channels may offer different discounts, and some channels might even provide services for free. I will automatically select the channel offering the highest discount at the time. Please refer to the system logs for specific usage details.
 
 ## Refunds
 
@@ -40,7 +40,7 @@ After you enter your API key, just refresh the page, and voila! All features are
 
 ### Third-Party Usage
 
-For third-party usage, set up a custom API base using `https://oneapi.laisky.com` and your API key.
+To make a request, it's essential that you use my gateway rather than reaching out to OpenAI directly. If you're working with a third-party app, you need to adjust the settings to include both the `API_BASE` and the `API_KEY`. For the `API_BASE`, enter my gateway's URL `https://oneapi.laisky.com`, and use your token as the `API_KEY`.
 
 [Click to view the currently supported documents](@gpt_chat_support_models)
 
