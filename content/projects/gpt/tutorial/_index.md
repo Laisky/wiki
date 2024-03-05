@@ -40,10 +40,16 @@ Support Models:
 - `gpt-4-turbo-preview` -> `gpt-4-0125-preview`
 - `gpt-4` -> `gpt-4-0125-preview`
 - `gpt-4-32k` -> `gpt-4-0125-preview`
+- `claude-instant-1`
+- `claude-2`
+- `claude-3-opus`
+- `claude-3-sonnet`
+- `llama2-70b-4096`
+- `mixtral-8x7b-32768`
 - `gemini-pro`
+- `gemini-pro-vision`
 - `gpt-3.5-turbo-0301` -> `gemini-pro`
 - `gpt-3.5-turbo-16k-0613` -> `gemini-pro`
-- `gemini-pro-vision`
 - `text-davinci-003`
 - `dall-e-2`
 - `dall-e-3`
