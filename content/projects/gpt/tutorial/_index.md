@@ -30,18 +30,22 @@ Support Models:
 
 *On the left is the value of the model in the request parameters, and on the right is the actual model that will be invoked by the backend.*
 
+- `gpt-3.5-turbo` -> `gpt-3.5-turbo-0125`
 - `gpt-3.5-turbo-1106`
 - `gpt-3.5-turbo-0125`
-- `gpt-3.5-turbo` -> `gpt-3.5-turbo-0125`
 - `gpt-3.5-turbo-16k` -> `gpt-3.5-turbo-0125`
+- `gpt-4-turbo-preview` -> `gpt-4-0125-preview`
 - `gpt-4-1106-preview`
 - `gpt-4-0125-preview`
 - `gpt-4-vision-preview`
-- `gpt-4-turbo-preview` -> `gpt-4-0125-preview`
 - `gpt-4` -> `gpt-4-0125-preview`
 - `gpt-4-32k` -> `gpt-4-0125-preview`
-- `claude-instant-1`
-- `claude-2`
+- `claude-1` -> `claude-instant-1.2`
+- `claude-2` -> `claude-2.1`
+- `claude-3` -> `claude-3-sonnet`
+- `claude-instant-1` -> `claude-instant-1.2`
+- `claude-instant-1.2`
+- `claude-2.1`
 - `claude-3-opus`
 - `claude-3-sonnet`
 - `llama2-70b-4096`
