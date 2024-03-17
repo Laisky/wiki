@@ -56,6 +56,7 @@ _On the left is the value of the model in the request parameters, and on the rig
 | claude-3-haiku-20240307  |                          | 0.25        | 1.25         |
 | llama2-70b-4096          |                          | FREE        |              |
 | mixtral-8x7b-32768       |                          | FREE        |              |
+| gemma-7b-it              |                          | FREE        |              |
 | gemini-pro               |                          | FREE        |              |
 | gemini-pro-vision        |                          | FREE        |              |
 | gpt-3.5-turbo-0301       | gemini-pro               |             |              |
