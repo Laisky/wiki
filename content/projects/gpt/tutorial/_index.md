@@ -44,7 +44,7 @@ _On the left is the value of the model in the request parameters, and on the rig
 | gpt-4-32k                | gpt-4-0125-preview       |             |              |
 | claude-1                 | claude-instant-1.2       |             |              |
 | claude-2                 | claude-2.1               |             |              |
-| claude-3                 | claude-3-sonnet-20240229 |             |              |
+| claude-3                 | claude-3-haiku-20240307  |             |              |
 | claude-instant-1         | claude-instant-1.2       |             |              |
 | claude-instant-1.2       |                          | 0.8         | 2.4          |
 | claude-2.1               |                          | 8           | 24           |
