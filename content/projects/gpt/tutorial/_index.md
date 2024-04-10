@@ -30,46 +30,49 @@ Support Models:
 
 _On the left is the value of the model in the request parameters, and on the right is the actual model that will be invoked by the backend._
 
-| Model Name               | Actual Model             | Input Price | Output Price |
-| ------------------------ | ------------------------ | ----------- | ------------ |
-| gpt-3.5-turbo            | gpt-3.5-turbo-0125       |             |              |
-| gpt-3.5-turbo-1106       |                          | 1           | 2            |
-| gpt-3.5-turbo-0125       |                          | 0.5         | 1.5          |
-| gpt-3.5-turbo-16k        | gpt-3.5-turbo-0125       |             |              |
-| gpt-4-turbo-preview      | gpt-4-0125-preview       |             |              |
-| gpt-4-1106-preview       |                          | 10          | 30           |
-| gpt-4-0125-preview       |                          | 10          | 30           |
-| gpt-4-vision-preview     |                          | 10          | 30           |
-| gpt-4                    | gpt-4-0125-preview       |             |              |
-| gpt-4-32k                | gpt-4-0125-preview       |             |              |
-| claude-1                 | claude-instant-1.2       |             |              |
-| claude-2                 | claude-2.1               |             |              |
-| claude-3                 | claude-3-haiku-20240307  |             |              |
-| claude-instant-1         | claude-instant-1.2       |             |              |
-| claude-instant-1.2       |                          | 0.8         | 2.4          |
-| claude-2.1               |                          | 8           | 24           |
-| claude-3-opus            | claude-3-opus-20240229   |             |              |
-| claude-3-sonnet          | claude-3-sonnet-20240229 |             |              |
-| claude-3-haiku           | claude-3-haiku-20240307  |             |              |
-| claude-3-opus-20240229   |                          | 15          | 45           |
-| claude-3-sonnet-20240229 |                          | 3           | 12           |
-| claude-3-haiku-20240307  |                          | 0.25        | 1.25         |
-| llama2-70b-4096          |                          | FREE        |              |
-| mixtral-8x7b-32768       |                          | FREE        |              |
-| gemma-7b-it              |                          | FREE        |              |
-| gemini-pro               |                          | FREE        |              |
-| gemini-pro-vision        |                          | FREE        |              |
-| gpt-3.5-turbo-0301       | gemini-pro               |             |              |
-| gpt-3.5-turbo-16k-0613   | gemini-pro               |             |              |
-| dall-e-2                 |                          | 0.02/pic    |              |
-| dall-e-3                 |                          | 0.04/pic    |              |
-| sdxl-turbo               |                          | FREE        |              |
-| tts-1                    |                          | 15          |              |
-| tts-1-hd                 |                          | 30          |              |
-| whisper-1                |                          | 0.006/min   |              |
-| test-embedding-ada-002   |                          | 0.1         |              |
-| text-embedding-3-small   |                          | 0.02        |              |
-| text-embedding-3-large   |                          | 0.13        |              |
+| Model Name                | Actual Model              | Input Price | Output Price |
+| ------------------------- | ------------------------- | ----------- | ------------ |
+| gpt-3.5-turbo             | gpt-3.5-turbo-0125        |             |              |
+| gpt-3.5-turbo-1106        |                           | 1           | 2            |
+| gpt-3.5-turbo-0125        |                           | 0.5         | 1.5          |
+| gpt-3.5-turbo-16k         | gpt-3.5-turbo-0125        |             |              |
+| gpt-4-turbo-preview       | gpt-4-0125-preview        |             |              |
+| gpt-4-turbo               | gpt-4-turbo-2024-04-09    |             |              |
+| gpt-4-turbo-2024-04-09    |                           | 10          | 30           |
+| gpt-4-1106-preview        |                           | 10          | 30           |
+| gpt-4-0125-preview        |                           | 10          | 30           |
+| gpt-4-vision-preview      | gpt-4-1106-vision-preview |             |              |
+| gpt-4-1106-vision-preview |                           | 10          | 30           |
+| gpt-4                     | gpt-4-0125-preview        |             |              |
+| gpt-4-32k                 | gpt-4-0125-preview        |             |              |
+| claude-1                  | claude-instant-1.2        |             |              |
+| claude-2                  | claude-2.1                |             |              |
+| claude-3                  | claude-3-haiku-20240307   |             |              |
+| claude-instant-1          | claude-instant-1.2        |             |              |
+| claude-instant-1.2        |                           | 0.8         | 2.4          |
+| claude-2.1                |                           | 8           | 24           |
+| claude-3-opus             | claude-3-opus-20240229    |             |              |
+| claude-3-sonnet           | claude-3-sonnet-20240229  |             |              |
+| claude-3-haiku            | claude-3-haiku-20240307   |             |              |
+| claude-3-opus-20240229    |                           | 15          | 45           |
+| claude-3-sonnet-20240229  |                           | 3           | 12           |
+| claude-3-haiku-20240307   |                           | 0.25        | 1.25         |
+| llama2-70b-4096           |                           | FREE        |              |
+| mixtral-8x7b-32768        |                           | FREE        |              |
+| gemma-7b-it               |                           | FREE        |              |
+| gemini-pro                |                           | FREE        |              |
+| gemini-pro-vision         |                           | FREE        |              |
+| gpt-3.5-turbo-0301        | gemini-pro                |             |              |
+| gpt-3.5-turbo-16k-0613    | gemini-pro                |             |              |
+| dall-e-2                  |                           | 0.02/pic    |              |
+| dall-e-3                  |                           | 0.04/pic    |              |
+| sdxl-turbo                |                           | FREE        |              |
+| tts-1                     |                           | 15          |              |
+| tts-1-hd                  |                           | 30          |              |
+| whisper-1                 |                           | 0.006/min   |              |
+| test-embedding-ada-002    |                           | 0.1         |              |
+| text-embedding-3-small    |                           | 0.02        |              |
+| text-embedding-3-large    |                           | 0.13        |              |
 
 _the unit of input/output price is USD per million tokens_
 
