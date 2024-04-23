@@ -17,6 +17,8 @@ _[(👉 English)](@page_gpt_pay)_
 
 请使用邮件联系我：`chat@laisky.com`.
 
+Telegram Channel: <https://t.me/laisky_oai>
+
 ## 购买方式
 
 先在 <https://oneapi.laisky.com/register> 注册一个账户，然后把账户名给我，就可以充值使用了，充值方式可以 微信/支付宝/Paypal 转账。目前没有接入任何充值渠道，所以采取邮件联系 + 转账的方式。

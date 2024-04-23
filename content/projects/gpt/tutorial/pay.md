@@ -16,6 +16,8 @@ Unlock all the cool features in two simple ways:
 
 Please contact me by email: `chat@laisky.com`.
 
+Telegram Channel: <https://t.me/laisky_oai>
+
 ## How to Buy 🛍️
 
 First, create an account [here](https://oneapi.laisky.com/register). Then, tell me your account name. You can add funds to your account using WeChat, Alipay, or PayPal. 🏦 Since we don't have a direct payment method yet, we'll chat over email to arrange the transfer. 📧
