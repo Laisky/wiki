@@ -45,6 +45,7 @@ _On the left is the value of the model in the request parameters, and on the rig
 | gpt-4-1106-vision-preview |                           | 10          | 30           |
 | gpt-4                     | gpt-4-0125-preview        |             |              |
 | gpt-4-32k                 | gpt-4-0125-preview        |             |              |
+| deepseek-chat             |                           | 0.14        | 0.28         |
 | claude-1                  | claude-instant-1.2        |             |              |
 | claude-2                  | claude-2.1                |             |              |
 | claude-3                  | claude-3-haiku-20240307   |             |              |
@@ -57,7 +58,6 @@ _On the left is the value of the model in the request parameters, and on the rig
 | claude-3-opus-20240229    |                           | 15          | 45           |
 | claude-3-sonnet-20240229  |                           | 3           | 12           |
 | claude-3-haiku-20240307   |                           | 0.25        | 1.25         |
-| mixtral-8x7b-32768        |                           | FREE        |              |
 | gemma-7b-it               |                           | FREE        |              |
 | llama3-8b-8192            |                           | FREE        |              |
 | llama3-70b-8192           |                           | FREE        |              |
