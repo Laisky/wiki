@@ -38,8 +38,8 @@ _On the left is the value of the model in the request parameters, and on the rig
 | gpt-3.5-turbo-16k         | gpt-3.5-turbo-0125       |             |              |
 | gpt-4o-2024-05-13         |                          | 5           | 15           |
 | gpt-4o                    | gpt-4o-2024-05-13        |             |              |
-| gpt-4-turbo-preview       | gpt-4o-2024-05-13        |             |              |
-| gpt-4-turbo               | gpt-4o-2024-05-13        |             |              |
+| gpt-4-turbo-preview       | gpt-4-turbo-2024-04-09   |             |              |
+| gpt-4-turbo               | gpt-4-turbo-2024-04-09   |             |              |
 | gpt-4-turbo-2024-04-09    |                          | 10          | 30           |
 | gpt-4-1106-preview        |                          | 10          | 30           |
 | gpt-4-0125-preview        |                          | 10          | 30           |
