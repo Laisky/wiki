@@ -63,6 +63,7 @@ _On the left is the value of the model in the request parameters, and on the rig
 | gemma-7b-it               |                          | FREE        |              |
 | llama3-8b-8192            |                          | FREE        |              |
 | llama3-70b-8192           |                          | FREE        |              |
+| mixtral-8x7b-32768        |                          | FREE        |              |
 | gemini-pro                |                          | FREE        |              |
 | gemini-pro-vision         |                          | FREE        |              |
 | gpt-3.5-turbo-0301        | gemini-pro               |             |              |
