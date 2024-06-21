@@ -48,6 +48,7 @@ _On the left is the value of the model in the request parameters, and on the rig
 | gpt-4                     | gpt-4-turbo-2024-04-09   |             |              |
 | gpt-4-32k                 | gpt-4-turbo-2024-04-09   |             |              |
 | deepseek-chat             |                          | 0.14        | 0.28         |
+| deepseek-coder            |                          | 0.14        | 0.28         |
 | claude-1                  | claude-instant-1.2       |             |              |
 | claude-2                  | claude-2.1               |             |              |
 | claude-3                  | claude-3-haiku-20240307  |             |              |
