@@ -80,8 +80,11 @@ _On the left is the value of the model in the request parameters, and on the rig
 | test-embedding-ada-002     |                            | 0.1         |              |
 | text-embedding-3-small     |                            | 0.02        |              |
 | text-embedding-3-large     |                            | 0.13        |              |
+| Cloudflare Workers AI      |                            | FREE        |              |
 
 _the unit of input/output price is USD per million tokens_
+
+_[Cloudflare Workers AI Models](https://developers.cloudflare.com/workers-ai/models/)_
 
 ### Pricing
 
