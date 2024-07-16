@@ -28,9 +28,9 @@ API Base: `https://oneapi.laisky.com`
 
 Support Models:
 
-_On the left is the value of the model in the request parameters, and on the right is the actual model that will be invoked by the backend._
+_`Request Model` is the value of the model in the user's request parameters, and `Actual Model` is the actual model that will be sent by the backend to upstream._
 
-| Model Name                                    | Actual Model               | Input Price | Output Price |
+| Request Model                                 | Actual Model               | Input Price | Output Price |
 | --------------------------------------------- | -------------------------- | ----------- | ------------ |
 | gpt-3.5-turbo                                 | gpt-3.5-turbo-0125         | 0.5         | 1.5          |
 | gpt-3.5-turbo-1106                            |                            | 1           | 2            |
