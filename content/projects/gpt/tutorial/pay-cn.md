@@ -19,6 +19,8 @@ _[(👉 English)](@page_gpt_pay)_
 
 Telegram Channel: <https://t.me/laisky_oai>
 
+[点击查阅目前支持的模型和费率](@gpt_chat_support_models)
+
 ## 购买方式
 
 先在 <https://oneapi.laisky.com/register> 注册一个账户，然后把账户名给我，就可以充值使用了，充值方式可以 微信/支付宝/Paypal/USDC/USDT 转账。目前没有接入任何充值渠道，所以采取邮件联系 + 转账的方式。
@@ -51,8 +53,6 @@ Telegram Channel: <https://t.me/laisky_oai>
 ### 第三方使用
 
 你必须通过我的网关来转发请求，而不能直接向 openai 发起请求。当你使用第三方 App 时，则必须在第三方 App 上同时设置 `API_BASE` 和 `API_KEY`。将 `API_BASE` 设置为我的网关地址 `https://oneapi.laisky.com`，`API_KEY` 则填入你的 token。
-
-（[点击查阅目前支持的模型](@gpt_chat_support_models)）
 
 一些第三方产品的示例:
 
