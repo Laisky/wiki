@@ -69,6 +69,8 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gemma-7b-it                                   |                            | FREE        |              |
 | llama3-8b-8192                                |                            | FREE        |              |
 | llama3-70b-8192                               |                            | FREE        |              |
+| llama-3.1-8b-instant                          |                            | FREE        |              |
+| llama-3.1-70b-versatile                       |                            | FREE        |              |
 | mixtral-8x7b-32768                            |                            | FREE        |              |
 | gemini-pro                                    |                            | FREE        |              |
 | gemini-pro-vision                             |                            | FREE        |              |
@@ -80,6 +82,7 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | tts-1                                         |                            | 15          |              |
 | tts-1-hd                                      |                            | 30          |              |
 | whisper-1                                     |                            | 0.006/min   |              |
+| whisper-large-v3                              |                            | FREE        |              |
 | test-embedding-ada-002                        |                            | 0.1         |              |
 | text-embedding-3-small                        |                            | 0.02        |              |
 | text-embedding-3-large                        |                            | 0.13        |              |
