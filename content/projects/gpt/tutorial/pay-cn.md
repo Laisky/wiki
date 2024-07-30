@@ -17,7 +17,7 @@ _[(👉 English)](@page_gpt_pay)_
 
 请使用邮件联系我：`chat@laisky.com`.
 
-Telegram Channel: <https://t.me/laisky_oai>
+更新信息会发布在 Telegram Channel: <https://t.me/laisky_oai>
 
 [点击查阅目前支持的模型和费率](@gpt_chat_support_models)
 
@@ -25,10 +25,12 @@ Telegram Channel: <https://t.me/laisky_oai>
 
 先在 <https://oneapi.laisky.com/register> 注册一个账户，然后把账户名给我，就可以充值使用了，充值方式可以 微信/支付宝/Paypal/USDC/USDT 转账。目前没有接入任何充值渠道，所以采取邮件联系 + 转账的方式。
 
-这是一个非盈利项目，我不赚取任何手续费和差价，汇率统一按照 8 计算。因为众所周知的原因，OpenAI 的跨境支付很困难，所以汇率成本较高，不是我收的劳务费。
+这是一个非盈利项目，我不赚取任何手续费和差价，汇率统一按照 8 计算。因为众所周知的原因，OpenAI/Anthropic 的跨境支付很困难，所以汇率成本较高，不是我收的劳务费。
 
 ~~Ps. 实际使用时，不同的 LLM 渠道可能会存在不同的折扣，个别渠道甚至可能会免费。我会自动选择当时折扣最高的渠道，具体用量请参考系统日志。~~
-因为发现有第三方渠道以次充好，拉低了模型质量。所以我决定不再接入第三方渠道了，只提供 OpenAI、Azure、Groq、Anthropic、Google、AWS 的官方渠道。
+因为发现有第三方渠道以次充好，拉低了模型质量。所以虽然很多第三方能够给出很低的价格，但是我还是决定不再接入第三方渠道了，只提供 OpenAI、Azure、Groq、Anthropic、Google、AWS、Cloudflare、DeepSeek 的官方渠道。
+
+**本站保证所有内容都来自于上面列举的官方接口，不接入任何其他第三方渠道**
 
 ![](https://s3.laisky.com/uploads/2024/03/oneapi-charge.png)
 
