@@ -71,6 +71,8 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | llama3-70b-8192                               |                            | FREE        |              |
 | llama-3.1-8b-instant                          |                            | FREE        |              |
 | llama-3.1-70b-versatile                       |                            | FREE        |              |
+| llama-3.1-405b-instruct                       |                            | FREE        |              |
+| mistral-7b-instruct-v0.3                      |                            | FREE        |              |
 | mixtral-8x7b-32768                            |                            | FREE        |              |
 | gemini-pro                                    |                            | FREE        |              |
 | gemini-pro-vision                             |                            | FREE        |              |
