@@ -10,9 +10,9 @@ RUN make lint
 RUN python ./_scripts/link_to_term.py --dir=./content --write
 RUN cd /app/themes && git clone https://github.com/Laisky/hugo-book.git
 
-FROM golang:1.21.5-bullseye AS gobuild
+FROM golang:1.23.1-bullseye AS gobuild
 
-RUN go install -tags extended github.com/gohugoio/hugo@latest
+RUN go install github.com/gohugoio/hugo@latest
 
 # COPY --from=linter /app /app
 # WORKDIR /app
