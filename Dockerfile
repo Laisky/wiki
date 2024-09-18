@@ -1,4 +1,4 @@
-# db . -t ppcelery/wiki:20230421
+# db . -t ppcelery/wiki:latest
 FROM python:3.10.4-bullseye AS linter
 
 WORKDIR /app
@@ -12,7 +12,7 @@ RUN cd /app/themes && git clone https://github.com/Laisky/hugo-book.git
 
 FROM golang:1.23.1-bullseye AS gobuild
 
-RUN go install github.com/gohugoio/hugo@latest
+RUN CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@latest
 
 # COPY --from=linter /app /app
 # WORKDIR /app
