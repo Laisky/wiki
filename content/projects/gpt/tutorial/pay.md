@@ -50,6 +50,12 @@ To make a request, it's essential that you use my gateway rather than reaching o
 
 Check out these third-party products:
 
+#### Cursor
+
+<https://www.cursor.com/>
+
+![](https://s3.laisky.com/uploads/2024/09/cursor.png)
+
 #### OpenAI Translator
 
 [https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc?hl=zh-CN](https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc?hl=zh-CN)

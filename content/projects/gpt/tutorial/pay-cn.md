@@ -56,7 +56,15 @@ _[(👉 English)](@page_gpt_pay)_
 
 你必须通过我的网关来转发请求，而不能直接向 openai 发起请求。当你使用第三方 App 时，则必须在第三方 App 上同时设置 `API_BASE` 和 `API_KEY`。将 `API_BASE` 设置为我的网关地址 `https://oneapi.laisky.com`，`API_KEY` 则填入你的 token。
 
+注意 `API_BASE` 的 URL PATH 部分，不同的产品有不同的要求，有的需要填写 `v1`，有的则不需要，还有个甚至需要填写 `/v1/chat/completions`。请认真阅读你所使用产品的文档，确认正确的格式。
+
 一些第三方产品的示例:
+
+#### Cursor
+
+<https://www.cursor.com/>
+
+![](https://s3.laisky.com/uploads/2024/09/cursor.png)
 
 #### OpenAI translator
 
