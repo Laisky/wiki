@@ -13,7 +13,7 @@ RUN cd /app/themes && git clone https://github.com/Laisky/hugo-book.git
 FROM golang:1.23.1-bullseye AS gobuild
 
 ENV GOPROXY=direct
-RUN CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@v0.136.5
+RUN CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@v0.135.0
 
 # COPY --from=linter /app /app
 # WORKDIR /app
