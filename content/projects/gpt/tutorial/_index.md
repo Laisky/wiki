@@ -64,7 +64,7 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | claude-3-opus-20240229                        |                           | 15          | 75           |
 | claude-3-sonnet-20240229                      |                           | 3           | 15           |
 | claude-3-haiku-20240307                       |                           | 0.25        | 1.25         |
-| claude-3-5-haiku                              | claude-3-5-haiku-20241022 | 1           | 5            |
+| claude-3.5-haiku                              | claude-3-5-haiku-20241022 | 1           | 5            |
 | claude-3-5-haiku-20241022                     |                           | 1           | 5            |
 | claude-3.5-sonnet                             | claude-3-5-sonnet-latest  | 3           | 15           |
 | claude-3.5-sonnet-8k                          | claude-3-5-sonnet-latest  | 3           | 15           |
