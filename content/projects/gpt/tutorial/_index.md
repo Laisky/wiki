@@ -79,16 +79,17 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | llama-3.1-405b-instruct                       |                           | FREE        |              |
 | mistral-7b-instruct-v0.3                      |                           | FREE        |              |
 | mixtral-8x7b-32768                            |                           | FREE        |              |
-| gemini-pro                                    |                           | FREE        |              |
-| gemini-pro-vision                             |                           | FREE        |              |
-| gemini-1.5-flash                              | gemini-1.5-flash-002      | FREE        |              |
-| gemini-1.5-flash-001                          |                           | FREE        |              |
-| gemini-1.5-flash-002                          |                           | FREE        |              |
-| gemini-1.5-pro                                | gemini-1.5-pro-002        | FREE        |              |
-| gemini-1.5-pro-001                            |                           | FREE        |              |
-| gemini-1.5-pro-002                            |                           | FREE        |              |
-| gpt-3.5-turbo-0301                            | gemini-pro                | FREE        |              |
-| gpt-3.5-turbo-16k-0613                        | gemini-pro                | FREE        |              |
+| gemini-pro                                    |                           | 0.5         | 1            |
+| gemini-pro-vision                             |                           | 0.5         | 1            |
+| gemini-1.5-flash                              | gemini-1.5-flash-002      | 0.02        | 0.04         |
+| gemini-1.5-flash-001                          |                           | 0.02        | 0.04         |
+| gemini-1.5-flash-002                          |                           | 0.02        | 0.04         |
+| gemini-1.5-pro                                | gemini-1.5-pro-002        | 0.25        | 0.5          |
+| gemini-1.5-pro-001                            |                           | 0.25        | 0.5          |
+| gemini-1.5-pro-002                            |                           | 0.25        | 0.5          |
+| gemini-1.5-pro-latest                         |                           | 0.25        | 0.5          |
+| gpt-3.5-turbo-0301                            | gemini-pro                | 0.5         | 1            |
+| gpt-3.5-turbo-16k-0613                        | gemini-pro                | 0.5         | 1            |
 | dall-e-2                                      |                           | 0.02/pic    |              |
 | dall-e-3                                      |                           | 0.04/pic    |              |
 | flux-pro                                      |                           | 0.055/pic   |              |
