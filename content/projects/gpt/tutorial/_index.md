@@ -97,7 +97,9 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gpt-3.5-turbo-16k-0613                        | gemini-pro                | 0.5         | 1            |
 | dall-e-2                                      |                           | 0.02/pic    |              |
 | dall-e-3                                      |                           | 0.04/pic    |              |
-| flux-pro                                      |                           | 0.055/pic   |              |
+| flux-1.1-pro                                  |                           | 0.04/pic    |              |
+| flux-1.1-pro-ultra                            |                           | 0.06/pic    |              |
+| flux-dev                                      |                           | 0.025/pic   |              |
 | flux-schnell                                  |                           | 0.003/pic   |              |
 | sdxl-turbo                                    |                           | FREE        |              |
 | tts-1                                         |                           | 15          |              |
