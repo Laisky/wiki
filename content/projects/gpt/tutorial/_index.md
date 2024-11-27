@@ -58,12 +58,6 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gpt-4-32k                                     | gpt-4-turbo-2024-04-09    | 10          | 30           |
 | deepseek-chat                                 |                           | 0.14        | 0.28         |
 | deepseek-coder                                |                           | 0.14        | 0.28         |
-| claude-1                                      | claude-instant-1.2        | 0.8         | 2.4          |
-| claude-2                                      | claude-2.1                | 8           | 24           |
-| claude-3                                      | claude-3-haiku-20240307   | 0.25        | 1.25         |
-| claude-instant-1                              | claude-instant-1.2        | 0.8         | 2.4          |
-| claude-instant-1.2                            |                           | 0.8         | 2.4          |
-| claude-2.1                                    |                           | 8           | 24           |
 | claude-3-opus                                 | claude-3-opus-20240229    | 15          | 75           |
 | claude-3-sonnet                               | claude-3-sonnet-20240229  | 3           | 15           |
 | claude-3-haiku                                | claude-3-haiku-20240307   | 0.25        | 1.25         |
