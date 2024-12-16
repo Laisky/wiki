@@ -89,6 +89,7 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gemini-1.5-flash                              | gemini-1.5-flash-002      | 0.02        | 0.04         |
 | gemini-1.5-flash-001                          |                           | 0.02        | 0.04         |
 | gemini-1.5-flash-002                          |                           | 0.02        | 0.04         |
+| gemini-2.0-flash-exp                          |                           | 0.25        | 0.5          |
 | gemini-1.5-pro                                | gemini-1.5-pro-002        | 0.25        | 0.5          |
 | gemini-1.5-pro-001                            |                           | 0.25        | 0.5          |
 | gemini-1.5-pro-002                            |                           | 0.25        | 0.5          |
@@ -142,6 +143,29 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | @hf/nexusflow/starling-lm-7b-beta             |                           | FREE        |              |
 | @cf/tinyllama/tinyllama-1.1b-chat-v1.0        |                           | FREE        |              |
 | @hf/thebloke/zephyr-7b-beta-awq               |                           | FREE        |              |
+| black-forest-labs/flux-1.1-pro                |                           |             | 0.04/pic     |
+| black-forest-labs/flux-1.1-pro-ultra          |                           |             | 0.06/pic     |
+| black-forest-labs/flux-canny-dev              |                           |             | 0.025/pic    |
+| black-forest-labs/flux-canny-pro              |                           |             | 0.05/pic     |
+| black-forest-labs/flux-depth-dev              |                           |             | 0.025/pic    |
+| black-forest-labs/flux-depth-pro              |                           |             | 0.05/pic     |
+| black-forest-labs/flux-dev                    |                           |             | 0.025/pic    |
+| black-forest-labs/flux-dev-lora               |                           |             | 0.032/pic    |
+| black-forest-labs/flux-fill-dev               |                           |             | 0.04/pic     |
+| black-forest-labs/flux-fill-pro               |                           |             | 0.05/pic     |
+| black-forest-labs/flux-pro                    |                           |             | 0.055/pic    |
+| black-forest-labs/flux-redux-dev              |                           |             | 0.025/pic    |
+| black-forest-labs/flux-redux-schnell          |                           |             | 0.003/pic    |
+| black-forest-labs/flux-schnell                |                           |             | 0.003/pic    |
+| black-forest-labs/flux-schnell-lora           |                           |             | 0.02/pic     |
+| ideogram-ai/ideogram-v2                       |                           |             | 0.08/pic     |
+| ideogram-ai/ideogram-v2-turbo                 |                           |             | 0.05/pic     |
+| recraft-ai/recraft-v3                         |                           |             | 0.04/pic     |
+| recraft-ai/recraft-v3-svg                     |                           |             | 0.08/pic     |
+| stability-ai/stable-diffusion-3               |                           |             | 0.035/pic    |
+| stability-ai/stable-diffusion-3.5-large       |                           |             | 0.065/pic    |
+| stability-ai/stable-diffusion-3.5-large-turbo |                           |             | 0.04/pic     |
+| stability-ai/stable-diffusion-3.5-medium      |                           |             | 0.035/pic    |
 
 _the unit of input/output price is USD per million tokens_
 
