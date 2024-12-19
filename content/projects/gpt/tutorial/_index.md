@@ -30,6 +30,8 @@ Support Models:
 
 _`Request Model` is the value of the model in the user's request parameters, and `Actual Model` is the actual model that will be sent by the backend to upstream._
 
+// ...existing code...
+
 | Request Model                                 | Actual Model              | Input Price | Output Price |
 | --------------------------------------------- | ------------------------- | ----------- | ------------ |
 | gpt-3.5-turbo                                 | gpt-3.5-turbo-0125        | 0.5         | 1.5          |
@@ -166,6 +168,26 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | stability-ai/stable-diffusion-3.5-large       |                           |             | 0.065/pic    |
 | stability-ai/stable-diffusion-3.5-large-turbo |                           |             | 0.04/pic     |
 | stability-ai/stable-diffusion-3.5-medium      |                           |             | 0.035/pic    |
+| ibm-granite/granite-20b-code-instruct-8k      |                           | 0.100       | 0.500        |
+| ibm-granite/granite-3.0-2b-instruct           |                           | 0.030       | 0.250        |
+| ibm-granite/granite-3.0-8b-instruct           |                           | 0.050       | 0.250        |
+| ibm-granite/granite-3.1-2b-instruct           |                           | 0.030       | 0.250        |
+| ibm-granite/granite-3.1-8b-instruct           |                           | 0.030       | 0.250        |
+| ibm-granite/granite-8b-code-instruct-128k     |                           | 0.050       | 0.250        |
+| meta/llama-2-13b                              |                           | 0.100       | 0.500        |
+| meta/llama-2-13b-chat                         |                           | 0.100       | 0.500        |
+| meta/llama-2-70b                              |                           | 0.650       | 2.750        |
+| meta/llama-2-70b-chat                         |                           | 0.650       | 2.750        |
+| meta/llama-2-7b                               |                           | 0.050       | 0.250        |
+| meta/llama-2-7b-chat                          |                           | 0.050       | 0.250        |
+| meta/meta-llama-3.1-405b-instruct             |                           | 9.500       | 9.500        |
+| meta/meta-llama-3-70b                         |                           | 0.650       | 2.750        |
+| meta/meta-llama-3-70b-instruct                |                           | 0.650       | 2.750        |
+| meta/meta-llama-3-8b                          |                           | 0.050       | 0.250        |
+| meta/meta-llama-3-8b-instruct                 |                           | 0.050       | 0.250        |
+| mistralai/mistral-7b-instruct-v0.2            |                           | 0.050       | 0.250        |
+| mistralai/mistral-7b-v0.1                     |                           | 0.050       | 0.250        |
+| mistralai/mixtral-8x7b-instruct-v0.1          |                           | 0.300       | 1.000        |
 
 _the unit of input/output price is USD per million tokens_
 
