@@ -38,16 +38,18 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gpt-3.5-turbo-1106                            |                           | 1           | 2            |
 | gpt-3.5-turbo-0125                            |                           | 0.5         | 1.5          |
 | gpt-3.5-turbo-16k                             | gpt-3.5-turbo-0125        | 0.5         | 1.5          |
-| o1-preview                                    | o1-preview-2024-09-12     | 15          | 60           |
+| o1                                            |                           | 15          | 60           |
+| o1-2024-12-17                                 |                           | 15          | 60           |
+| o1-preview                                    |                           | 15          | 60           |
 | o1-preview-2024-09-12                         |                           | 15          | 60           |
-| o1-mini                                       | o1-mini-2024-09-12        | 3           | 12           |
+| o1-mini                                       |                           | 3           | 12           |
 | o1-mini-2024-09-12                            |                           | 3           | 12           |
-| chatgpt-4o-latest                             | gpt-4o-2024-08-06         | 2.5         | 10           |
+| chatgpt-4o-latest                             |                           | 2.5         | 10           |
 | gpt-4o                                        | gpt-4o-2024-08-06         | 2.5         | 10           |
 | gpt-4o-2024-05-13                             |                           | 5           | 15           |
 | gpt-4o-2024-08-06                             |                           | 2.5         | 10           |
 | gpt-4o-2024-11-20                             |                           | 2.5         | 10           |
-| gpt-4o-mini                                   | gpt-4o-mini-2024-07-18    | 0.15        | 0.6          |
+| gpt-4o-mini                                   |                           | 0.15        | 0.6          |
 | gpt-4o-mini-2024-07-18                        | gpt-4o-mini-2024-07-18    | 0.15        | 0.6          |
 | gpt-4-turbo-preview                           | gpt-4-turbo-2024-04-09    | 10          | 30           |
 | gpt-4-turbo                                   | gpt-4-turbo-2024-04-09    | 10          | 30           |
@@ -61,7 +63,7 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | deepseek-chat                                 |                           | 0.14        | 0.28         |
 | deepseek-coder                                |                           | 0.14        | 0.28         |
 | claude-3-opus                                 | claude-3-opus-20240229    | 15          | 75           |
-| claude-3-sonnet                               | claude-3-sonnet-20240229  | 3           | 15           |
+| claude-3-sonnet                               | claude-3-sonnet-latest    | 3           | 15           |
 | claude-3-haiku                                | claude-3-haiku-20240307   | 0.25        | 1.25         |
 | claude-3-opus-20240229                        |                           | 15          | 75           |
 | claude-3-sonnet-20240229                      |                           | 3           | 15           |
