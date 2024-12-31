@@ -75,19 +75,19 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | claude-3-5-sonnet-20240620                    |                               | 3           | 15           |
 | claude-3-5-sonnet-20241022                    |                               | 3           | 15           |
 | claude-3-5-sonnet-latest                      |                               | 3           | 15           |
-| gemma-7b-it                                   |                               | FREE        |              |
-| llama3-8b-8192                                |                               | FREE        |              |
-| llama3-70b-8192                               |                               | FREE        |              |
-| llama-3.1-8b-instant                          |                               | FREE        |              |
-| llama-3.1-11b-vision-preview                  |                               | FREE        |              |
-| llama-3.1-70b-specdec                         |                               | FREE        |              |
-| llama-3.1-70b-versatile                       |                               | FREE        |              |
-| llama-3.1-405b-instruct                       |                               | FREE        |              |
-| llama-3.2-1b-preview                          |                               | FREE        |              |
-| llama-3.2-3b-preview                          |                               | FREE        |              |
-| llama-3.2-90b-vision-preview                  |                               | FREE        |              |
-| mistral-7b-instruct-v0.3                      |                               | FREE        |              |
-| mixtral-8x7b-32768                            |                               | FREE        |              |
+| gemma2-9b-it                                  |                               | FREE        | FREE         |
+| mixtral-8x7b-32768                            |                               | FREE        | FREE         |
+| llama-guard-3-8b                              |                               | FREE        | FREE         |
+| llama3-70b-8192                               |                               | FREE        | FREE         |
+| llama3-8b-8192                                |                               | FREE        | FREE         |
+| llama-3.1-8b-instant                          |                               | FREE        | FREE         |
+| llama-3.1-70b-specdec                         |                               | FREE        | FREE         |
+| llama-3.2-1b-preview                          |                               | FREE        | FREE         |
+| llama-3.2-3b-preview                          |                               | FREE        | FREE         |
+| llama-3.2-11b-vision-preview                  |                               | FREE        | FREE         |
+| llama-3.2-90b-vision-preview                  |                               | FREE        | FREE         |
+| llama-3.3-70b-versatile                       |                               | FREE        | FREE         |
+| llama-3.3-70b-specdec                         |                               | FREE        | FREE         |
 | gemini-1.5-flash                              | gemini-1.5-flash-002          | 0.02        | 0.04         |
 | gemini-1.5-flash-001                          |                               | 0.02        | 0.04         |
 | gemini-1.5-flash-002                          |                               | 0.02        | 0.04         |
