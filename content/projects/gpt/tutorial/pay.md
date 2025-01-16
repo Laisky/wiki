@@ -9,14 +9,13 @@ url: "/projects/gpt/pay"
 
 _[(👉 中文版)](@page_gpt_pay_cn)_
 
-Unlock all the cool features in two simple ways:
+Free users can only access limited models and features. By recharging on my One-API platform to become a paid user, you can unlock all supported models and features. Please continue reading below for specific purchase methods and the list of supported models.
 
-1. Use your own OpenAI API key. 🔑
-2. Or buy a special API key from me. 🎁
+If you have any questions, please contact me via email: `chat@laisky.com`.
 
-Please contact me by email: `chat@laisky.com`.
+Updates will be posted on Telegram Channel: <https://t.me/laisky_oai>
 
-Telegram Channel: <https://t.me/laisky_oai>
+[Click to view currently supported models and rates](@gpt_chat_support_models)
 
 ## How to Buy 🛍️
 
