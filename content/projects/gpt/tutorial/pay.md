@@ -9,45 +9,76 @@ url: "/projects/gpt/pay"
 
 _[(👉 中文版)](@page_gpt_pay_cn)_
 
-Free users can only access limited models and features. By recharging on my One-API platform to become a paid user, you can unlock all supported models and features. Please continue reading below for specific purchase methods and the list of supported models.
+Free users can only access a limited set of models and features. To unlock all supported models and features, simply add credits on my One-API platform to become a paid user. Read on for purchase details and a list of supported models.
 
-If you have any questions, please contact me via email: `chat@laisky.com`.
+If you have any questions, feel free to email me at `chat@laisky.com`.
 
-Updates will be posted on Telegram Channel: <https://t.me/laisky_oai>
+Updates are posted on my Telegram Channel: <https://t.me/laisky_oai>
 
-[Click to view currently supported models and rates](@gpt_chat_support_models)
+[Check supported models and rates](@gpt_chat_support_models)
 
-## How to Buy 🛍️
+## Purchase
 
-First, create an account [here](https://oneapi.laisky.com/register). Then, tell me your account name. You can add funds to your account using WeChat, Alipay, or PayPal. 🏦 Since we don't have a direct payment method yet, we'll chat over email to arrange the transfer. 📧
+### Disclaimer
 
-This is a non-profit project, and I do not earn any commissions or markup fees. The exchange rate is uniformly calculated at 8. Due to well-known reasons, cross-border payments to OpenAI are quite challenging, resulting in higher currency conversion costs, which are not fees charged for my services.
+This is a non-profit project. I don’t charge any handling fees or markups, and I use a standard exchange rate of 8:1 for USD:RMB. Because cross-border payments for OpenAI/Anthropic can be challenging, the exchange costs are higher—these are not service fees I collect.
 
-P.S. In practice, various LLM channels may offer different discounts, and some channels might even provide services for free. I will automatically select the channel offering the highest discount at the time. Please refer to the system logs for specific usage details.
+I’ve noticed some third-party channels provide poor-quality solutions at cheaper prices, so I’ve decided not to integrate any third-party channels. I only use official channels for OpenAI, Azure, Groq, Anthropic, Google, AWS, Cloudflare, DeepSeek, and Replicate.
 
-![](https://s3.laisky.com/uploads/2024/03/oneapi-charge.png)
+**Everything here comes straight from the official interfaces.**
+
+### Register an Account
+
+Sign up at <https://oneapi.laisky.com/register>.
+
+### Purchase Recharge Code
+
+You can send payments through Alipay, WeChat, OKX, BINANCE, or BYBIT. After transferring, please email me (`chat@laisky.com`) the transaction amount so I can process it promptly and send you a recharge code.
+
+For RMB via Alipay/Wechat, I’ll convert your transfer to USD at the mentioned rate. For crypto, I only accept stablecoins like USDT/USDC/FDUSD/DAI at a 1:1 rate with USD.
+
+- [Alipay](https://s3.laisky.com/uploads/2025/01/pay_ali.JPG)
+- [WeChat](https://s3.laisky.com/uploads/2025/01/pay_wechat.JPG)
+- OKX UID: `573443235054776568`
+- BINANCE UID: `570130488`
+- BYBIT UID: `262385596`
+
+If you need other on-chain payment address, please contact me directly.
+
+### Using the Recharge Code
+
+Go to <https://oneapi.laisky.com/topup>, enter the recharge code I provided, then click **Redeem**.
 
 ## Refunds
 
 If you need a refund, just email me. We'll calculate the refund based on the market price when you added the funds. 📈
 
-## How to Use 🚀
+## How to Use LLM Services
 
-### Web Usage
+### Getting Your API Token
 
-The easiest way is to go to [https://chat.laisky.com/](https://chat.laisky.com/), and put your API key in the top right corner.
+Visit <https://oneapi.laisky.com/token> to create your token.
 
-After you enter your API key, just refresh the page, and voila! All features are unlocked. 🎊
+![](https://s3.laisky.com/uploads/2024/03/create-token.png?v=3)
+
+### Web Interface
+
+The easiest way to start is to enter your API key in the top right corner at <https://chat.laisky.com/>.
+
+Simply refresh the page after entering your API key to unlock all features.
 
 ![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
 
-### Third-Party Usage
+### Using Third-Party Apps
 
-To make a request, it's essential that you use my gateway rather than reaching out to OpenAI directly. If you're working with a third-party app, you need to adjust the settings to include both the `API_BASE` and the `API_KEY`. For the `API_BASE`, enter my gateway's URL `https://oneapi.laisky.com`, and use your token as the `API_KEY`.
+Important: All requests must go through our gateway instead of directly to OpenAI. When setting up third-party apps, you'll need to configure both the `API_BASE` and `API_KEY`:
 
-[Click to view the currently supported documents](@gpt_chat_support_models)
+- Set `API_BASE` to: `https://oneapi.laisky.com` or `https://oneapi.laisky.com/v1`
+- Set `API_KEY` to your personal token
 
-Check out these third-party products:
+Note: The `API_BASE` URL format varies between apps. Some need just `v1`, others don't, and some require the full path `/v1/chat/completions`. Be sure to check your app's documentation for the correct format.
+
+Here are some popular apps you can use:
 
 #### Cursor
 
@@ -57,26 +88,32 @@ Check out these third-party products:
 
 #### OpenAI Translator
 
-[https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc?hl=zh-CN](https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc?hl=zh-CN)
+[Chrome Web Store - OpenAI Translator](https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc)
 
 ![](https://s3.laisky.com/uploads/2023/12/openai-translator.png)
 
 #### Immersive Translate
 
-[https://chromewebstore.google.com/detail/immersive-translate-web-p/bpoadfkcbjbfhfodiogcnhhhpibjhbnh?hl=zh-CN](https://chromewebstore.google.com/detail/immersive-translate-web-p/bpoadfkcbjbfhfodiogcnhhhpibjhbnh?hl=zh-CN)
+[Chrome Web Store - Immersive Translate](https://chromewebstore.google.com/detail/immersive-translate-web-p/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)
 
 ![](https://s3.laisky.com/uploads/2023/12/immersive-translate.png)
 
 #### GPTCommit
 
-[https://github.com/zurawiki/gptcommit](https://github.com/zurawiki/gptcommit)
+[GitHub - GPTCommit](https://github.com/zurawiki/gptcommit)
 
 ![](https://s3.laisky.com/uploads/2023/12/gpt-commit.png)
 
-## Disclaimer 📝
+## Permanent Storage on Arweave
 
-This is a friendly, non-profit project. I don't charge any fees, just providing a way to use the service. I can't guarantee the service quality, but I'll do my best!
+With your API key, you can also use our Arweave file upload service. Upload files for permanent storage using GraphQL or our Telegram Bot. Learn more at <https://blog.laisky.com/p/arweave/>.
 
-The content comes from users or AI, and I'm not responsible for any output.
+![](https://s3.laisky.com/uploads/2025/01/ar-upload-demo.png)
 
-If you run into any issues, don't hesitate to contact me. I'll do my best to help out ASAP. For refunds, just drop me an email. 💌
+## Disclaimer
+
+This is a non-profit project - I don't charge any service fees and simply provide access to these services. While I can't guarantee service quality, I'm here to help if you run into any issues.
+
+All content is generated by users or AI - I'm not responsible for any outputs.
+
+If you encounter any problems or need a refund, just drop me an email. I'll do my best to help quickly!
