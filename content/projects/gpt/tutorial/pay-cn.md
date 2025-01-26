@@ -104,9 +104,48 @@ _[(👉 English)](@page_gpt_pay)_
 
 ## Permanent storage on Arweave
 
-使用本站的 API-KEY，也可以调用我的 Arweave 文件上传接口，可以通过 GraphQL/Telegram Bot 等方式将文件上传至 Arweave 永久存储，具体方法可见 <https://blog.laisky.com/p/arweave/>。
+使用本站的 API-KEY，也可以调用我的 Arweave 文件上传接口，可以通过 GraphQL/Telegram Bot 等方式将文件上传至 Arweave 永久存储。更多细节可以参考 <https://blog.laisky.com/p/arweave/>。
 
-![](https://s3.laisky.com/uploads/2025/01/ar-upload-demo.png)
+### Telegram Bot
+
+在 telegram 中[添加 Bot](https://t.me/laisky_alert_bot)，然后按照下图所示，绑定账号后就可以直接发送文件，上传至 Arweave 永久存储。
+
+![](https://s3.laisky.com/uploads/2025/01/arweave-bot.jpeg)
+
+### GraphQL API
+
+API: `https://gq.laisky.com/query/`
+
+将你要上传的文件转换为 base64 字符串，然后调用 `ArweaveUpload` 接口，传入 `fileB64` 参数即可：
+
+```js
+// request
+mutation ar {
+  ArweaveUpload(
+    fileB64: "aGVsbG8="
+  ) {
+    file_id
+  }
+}
+
+// response
+{
+    "data": {
+        "ArweaveUpload": {
+            "file_id": "TprLA3XlyRHlxb9jIG0TCV6v4rimGkMDReKyVMp_iMY"
+        }
+    }
+}
+```
+
+Sample:
+
+```sh
+curl --location 'https://gq.laisky.com/query/' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer laisky-k24tal3x3eN6SjKhD78e85Fc4dD648F1B0781aF435455642' \
+--data '{"query":"mutation ar {\r\n  ArweaveUpload(\r\n    fileB64: \"aGVsbG8=\"\r\n  ) {\r\n    file_id\r\n  }\r\n}","variables":{}}'
+```
 
 ## 免责声明
 
