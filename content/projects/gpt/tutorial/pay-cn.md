@@ -114,9 +114,10 @@ _[(👉 English)](@page_gpt_pay)_
 
 ### GraphQL API
 
-API: `https://gq.laisky.com/query/`
+* API: `https://gq.laisky.com/query/`
+* Header: `Authorization` 设置为 `Bearer ${API_KEY}`
 
-将你要上传的文件转换为 base64 字符串，然后调用 `ArweaveUpload` 接口，传入 `fileB64` 参数即可：
+将你要上传的文件转换为 base64 字符串，然后调用 `ArweaveUpload` 接口，传入 `fileB64` 参数即可。
 
 ```js
 // request
@@ -143,7 +144,7 @@ Sample:
 ```sh
 curl --location 'https://gq.laisky.com/query/' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer laisky-k24tal3x3eN6SjKhD78e85Fc4dD648F1B0781aF435455642' \
+--header 'Authorization: Bearer sk-xxxxxxx' \
 --data '{"query":"mutation ar {\r\n  ArweaveUpload(\r\n    fileB64: \"aGVsbG8=\"\r\n  ) {\r\n    file_id\r\n  }\r\n}","variables":{}}'
 ```
 
