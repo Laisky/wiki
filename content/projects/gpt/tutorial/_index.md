@@ -50,7 +50,7 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gpt-4o-2024-08-06                             |                                     | 2.5         | 10           |
 | gpt-4o-2024-11-20                             |                                     | 2.5         | 10           |
 | gpt-4o-mini                                   |                                     | 0.15        | 0.6          |
-| gpt-4o-mini-2024-07-18                        | gpt-4o-mini-2024-07-18              | 0.15        | 0.6          |
+| gpt-4o-mini-2024-07-18                        |                                     | 0.15        | 0.6          |
 | gpt-4-turbo-preview                           | gpt-4-turbo-2024-04-09              | 10          | 30           |
 | gpt-4-turbo                                   | gpt-4-turbo-2024-04-09              | 10          | 30           |
 | gpt-4-turbo-2024-04-09                        |                                     | 10          | 30           |
@@ -94,7 +94,6 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gemini-2.0-flash                              | gemini-2.0-flash-exp                | 0.02        | 0.04         |
 | gemini-2.0-flash-exp                          |                                     | 0.02        | 0.04         |
 | gemini-2.0-flash-thinking                     | gemini-2.0-flash-thinking-exp-01-21 | 0.02        | 0.04         |
-| gemini-2.0-flash-thinking-exp                 |                                     | 0.02        | 0.04         |
 | gemini-2.0-flash-thinking-exp-01-21           |                                     | 0.02        | 0.04         |
 | gemini-pro                                    |                                     | 0.5         | 1            |
 | gemini-pro-vision                             |                                     | 0.5         | 1            |
@@ -104,13 +103,14 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gemini-1.5-pro-latest                         |                                     | 0.25        | 0.5          |
 | gpt-3.5-turbo-0301                            | gemini-pro                          | 0.5         | 1            |
 | gpt-3.5-turbo-16k-0613                        | gemini-pro                          | 0.5         | 1            |
-| dall-e-2                                      |                                     | 0.02/pic    |              |
-| dall-e-3                                      |                                     | 0.04/pic    |              |
-| flux-1.1-pro                                  |                                     | 0.04/pic    |              |
-| flux-1.1-pro-ultra                            |                                     | 0.06/pic    |              |
-| flux-dev                                      |                                     | 0.025/pic   |              |
-| flux-schnell                                  |                                     | 0.003/pic   |              |
+| dall-e-2                                      |                                     |             | 0.02/pic     |
+| dall-e-3                                      |                                     |             | 0.04/pic     |
+| flux-1.1-pro                                  |                                     |             | 0.04/pic     |
+| flux-1.1-pro-ultra                            |                                     |             | 0.06/pic     |
+| flux-dev                                      |                                     |             | 0.025/pic    |
+| flux-schnell                                  |                                     |             | 0.003/pic    |
 | sdxl-turbo                                    |                                     | FREE        |              |
+| imagen-3.0-generate-001                       |                                     |             | 0.02/pic     |
 | tts-1                                         |                                     | 15          |              |
 | tts-1-hd                                      |                                     | 30          |              |
 | whisper-1                                     |                                     | 0.006/min   |              |
