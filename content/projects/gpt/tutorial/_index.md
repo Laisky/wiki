@@ -45,6 +45,8 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | o3-mini                                       |                                     | 1.1         | 4.4          |
 | o3-mini-2025-01-31                            |                                     | 1.1         | 4.4          |
 | chatgpt-4o-latest                             |                                     | 2.5         | 10           |
+| gpt-4.5-preview                               |                                     | 75          | 150          |
+| gpt-4.5-preview-2025-02-27                    |                                     | 75          | 150          |
 | gpt-4o                                        | chatgpt-4o-latest                   | 2.5         | 10           |
 | gpt-4o-2024-05-13                             |                                     | 5           | 15           |
 | gpt-4o-2024-08-06                             |                                     | 2.5         | 10           |
@@ -75,7 +77,7 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | claude-3-5-sonnet-latest                      |                                     | 3           | 15           |
 | claude-3-5-sonnet-20240620                    |                                     | 3           | 15           |
 | claude-3-5-sonnet-20241022                    |                                     | 3           | 15           |
-| claude-3.7-sonnet                      |  claude-3-7-sonnet-latest                                   | 3           | 15           |
+| claude-3.7-sonnet                             | claude-3-7-sonnet-latest            | 3           | 15           |
 | claude-3-7-sonnet-latest                      |                                     | 3           | 15           |
 | claude-3-7-sonnet-20250219                    |                                     | 3           | 15           |
 | gemma2-9b-it                                  |                                     | FREE        | FREE         |
