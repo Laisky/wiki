@@ -108,6 +108,7 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gemini-1.5-pro-001                            |                                     | 0.3125      | 1.25         |
 | gemini-1.5-pro-002                            |                                     | 0.3125      | 1.25         |
 | gemini-1.5-pro-latest                         |                                     | 0.3125      | 1.25         |
+| gemini-2.0-pro                                | gemini-2.0-pro-exp-02-05            | 0.3125      | 1.25         |
 | gemini-2.0-pro-exp-02-05                      |                                     | 0.3125      | 1.25         |
 | gpt-3.5-turbo-0301                            | gemini-pro                          | 0.5         | 1            |
 | gpt-3.5-turbo-16k-0613                        | gemini-pro                          | 0.5         | 1            |
