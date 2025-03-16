@@ -121,7 +121,11 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | flux-dev                                      |                                     |             | 0.025/pic    |
 | flux-schnell                                  |                                     |             | 0.003/pic    |
 | sdxl-turbo                                    |                                     | FREE        |              |
-| imagen-3.0-generate-001                       |                                     |             | 0.02/pic     |
+| imagen-3.0                                    | imagen-3.0-generate-002             |             | 0.04/pic     |
+| imagen-3.0-generate-001                       |                                     |             | 0.04/pic     |
+| imagen-3.0-generate-002                       |                                     |             | 0.04/pic     |
+| imagen-3.0-fast                               | imagen-3.0-fast-generate-001        |             | 0.02/pic     |
+| imagen-3.0-fast-generate-001                  |                                     |             | 0.02/pic     |
 | tts-1                                         |                                     | 15          |              |
 | tts-1-hd                                      |                                     | 30          |              |
 | whisper-1                                     |                                     | 0.006/min   |              |
