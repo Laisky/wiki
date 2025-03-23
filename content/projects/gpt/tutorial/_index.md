@@ -44,10 +44,10 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | o1-mini-2024-09-12                            |                                     | 3           | 12           |
 | o3-mini                                       |                                     | 1.1         | 4.4          |
 | o3-mini-2025-01-31                            |                                     | 1.1         | 4.4          |
-| chatgpt-4o-latest                             |                                     | 2.5         | 10           |
 | gpt-4.5-preview                               |                                     | 75          | 150          |
 | gpt-4.5-preview-2025-02-27                    |                                     | 75          | 150          |
 | gpt-4o                                        | gpt-4o-2024-11-20                   | 2.5         | 10           |
+| chatgpt-4o-latest                             |                                     | 5           | 15           |
 | gpt-4o-2024-05-13                             |                                     | 5           | 15           |
 | gpt-4o-2024-08-06                             |                                     | 2.5         | 10           |
 | gpt-4o-2024-11-20                             |                                     | 2.5         | 10           |
