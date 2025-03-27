@@ -98,20 +98,22 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gemini-1.5-flash                              | gemini-1.5-flash-002                | 0.01875     | 0.075        |
 | gemini-1.5-flash-001                          |                                     | 0.01875     | 0.075        |
 | gemini-1.5-flash-002                          |                                     | 0.01875     | 0.075        |
-| gemini-2.0-flash                              |                                     | 0.15        | 0.6          |
-| gemini-2.0-flash-exp                          |                                     | 0.15        | 0.6          |
-| gemini-2.0-flash-001                          |                                     | 0.15        | 0.6          |
-| gemini-2.0-flash-lite-preview-02-05           |                                     | 0.15        | 0.6          |
-| gemini-2.0-flash-thinking                     | gemini-2.0-flash-thinking-exp-01-21 | 0.15        | 0.6          |
-| gemini-2.0-flash-thinking-exp-01-21           |                                     | 0.15        | 0.6          |
+| gemini-2.0-flash                              |                                     | 0.15        | 0.4          |
+| gemini-2.0-flash-exp                          |                                     | 0.15        | 0.4          |
+| gemini-2.0-flash-001                          |                                     | 0.15        | 0.4          |
+| gemini-2.0-flash-lite-preview-02-05           |                                     | 0.075       | 0.3          |
+| gemini-2.0-flash-thinking                     | gemini-2.0-flash-thinking-exp-01-21 | 0.15        | 0.4          |
+| gemini-2.0-flash-thinking-exp-01-21           |                                     | 0.15        | 0.4          |
 | gemini-pro                                    |                                     | 0.5         | 1            |
 | gemini-pro-vision                             |                                     | 0.5         | 1            |
-| gemini-1.5-pro                                | gemini-1.5-pro-002                  | 0.3125      | 1.25         |
-| gemini-1.5-pro-001                            |                                     | 0.3125      | 1.25         |
-| gemini-1.5-pro-002                            |                                     | 0.3125      | 1.25         |
-| gemini-1.5-pro-latest                         |                                     | 0.3125      | 1.25         |
-| gemini-2.0-pro                                | gemini-2.0-pro-exp-02-05            | 0.3125      | 1.25         |
-| gemini-2.0-pro-exp-02-05                      |                                     | 0.3125      | 1.25         |
+| gemini-1.5-pro                                | gemini-1.5-pro-002                  | 1.25        | 5            |
+| gemini-1.5-pro-001                            |                                     | 1.25        | 5            |
+| gemini-1.5-pro-002                            |                                     | 1.25        | 5            |
+| gemini-1.5-pro-latest                         |                                     | 1.25        | 5            |
+| gemini-2.0-pro                                | gemini-2.0-pro-exp-02-05            | 1.25        | 5            |
+| gemini-2.0-pro-exp-02-05                      |                                     | 1.25        | 5            |
+| gemini-2.5-pro                                | gemini-2.5-pro-exp-03-25            | 1.25        | 5            |
+| gemini-2.5-pro-exp-03-25                      |                                     | 1.25        | 5            |
 | gpt-3.5-turbo-0301                            | gemini-pro                          | 0.5         | 1            |
 | gpt-3.5-turbo-16k-0613                        | gemini-pro                          | 0.5         | 1            |
 | dall-e-2                                      |                                     |             | 0.02/pic     |
