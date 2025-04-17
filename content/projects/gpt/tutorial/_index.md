@@ -50,9 +50,11 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | o3-mini-2025-01-31                            |                                     | 1.1         | 4.4          |
 | o3                                            |                                     | 10          | 40           |
 | o3-2025-04-16                                 |                                     | 10          | 40           |
+| o4-mini                                       |                                     | 1.1         | 4.4          |
+| o4-mini-2025-04-16                            |                                     | 1.1         | 4.4          |
 | gpt-4.1                                       |                                     | 2           | 8            |
 | gpt-4.1-2025-04-14                            |                                     | 2           | 8            |
-| gpt-4.1-mini                                  |                                     | 0.4         | 1.6         |
+| gpt-4.1-mini                                  |                                     | 0.4         | 1.6          |
 | gpt-4.1-mini-2025-04-14                       |                                     | 0.4         | 1.6          |
 | gpt-4.1-nano                                  |                                     | 0.1         | 0.4          |
 | gpt-4.1-nano-2025-04-14                       |                                     | 0.1         | 0.4          |
