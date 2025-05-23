@@ -96,6 +96,10 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | claude-3.7-sonnet                             | claude-3-7-sonnet-latest            | 3           | 15                                                             |
 | claude-3-7-sonnet-latest                      |                                     | 3           | 15                                                             |
 | claude-3-7-sonnet-20250219                    |                                     | 3           | 15                                                             |
+| claude-4-sonnet                               | claude-sonnet-4-20250514            | 3           | 15                                                             |
+| claude-sonnet-4-20250514                      |                                     | 3           | 15                                                             |
+| claude-4-opus                                 | claude-opus-4-20250514              | 15          | 75                                                             |
+| claude-opus-4-20250514                        |                                     | 15          | 75                                                             |
 | gemma2-9b-it                                  |                                     | FREE        | FREE                                                           |
 | mixtral-8x7b-32768                            |                                     | FREE        | FREE                                                           |
 | llama-guard-3-8b                              |                                     | FREE        | FREE                                                           |
