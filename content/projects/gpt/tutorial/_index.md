@@ -124,6 +124,8 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gemini-2.0-flash-lite-preview-02-05           |                                     | 0.075       | 0.3                                                            |
 | gemini-2.0-flash-thinking                     | gemini-2.0-flash-thinking-exp-01-21 | 0.15        | 0.4                                                            |
 | gemini-2.0-flash-thinking-exp-01-21           |                                     | 0.15        | 0.4                                                            |
+| gemini-2.5-flash-preview-04-17                |                                     | 0.15        | 0.4                                                            |
+| gemini-2.5-flash-preview-05-20                |                                     | 0.15        | 0.4                                                            |
 | gemini-pro                                    |                                     | 0.5         | 1                                                              |
 | gemini-pro-vision                             |                                     | 0.5         | 1                                                              |
 | gemini-1.5-pro                                | gemini-1.5-pro-002                  | 1.25        | 5                                                              |
