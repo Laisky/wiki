@@ -68,9 +68,11 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | gpt-4o-2024-08-06                             |                                     | 2.5         | 10                                                             |
 | gpt-4o-2024-11-20                             |                                     | 2.5         | 10                                                             |
 | gpt-4o-search-preview                         |                                     | 2.5         | 10                                                             |
+| gpt-4o-search-preview-2025-03-11              |                                     | 2.5         | 10                                                             |
 | gpt-4o-mini                                   |                                     | 0.15        | 0.6                                                            |
 | gpt-4o-mini-2024-07-18                        |                                     | 0.15        | 0.6                                                            |
 | gpt-4o-mini-search-preview                    |                                     | 0.15        | 0.6                                                            |
+| gpt-4o-mini-search-preview-2025-03-11         |                                     | 0.15        | 0.6                                                            |
 | gpt-4-turbo-preview                           | gpt-4-turbo-2024-04-09              | 10          | 30                                                             |
 | gpt-4-turbo                                   | gpt-4-turbo-2024-04-09              | 10          | 30                                                             |
 | gpt-4-turbo-2024-04-09                        |                                     | 10          | 30                                                             |
