@@ -17,6 +17,8 @@ Updates are posted on my Telegram Channel: <https://t.me/laisky_oai>
 
 [Check supported models and rates](@gpt_chat_support_models)
 
+Project source code: If you run into any issues, feel free to submit an Issue or directly make a PR to fix it: <https://github.com/Laisky/one-api>
+
 ## Purchase
 
 ### Disclaimer

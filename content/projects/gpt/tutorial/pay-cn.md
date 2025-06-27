@@ -18,6 +18,8 @@ _[(👉 English)](@page_gpt_pay)_
 
 [点击查阅目前支持的模型和费率](@gpt_chat_support_models)
 
+项目源代码，遇到问题可以提 Issue 或者直接提 PR 修复: <https://github.com/Laisky/one-api>
+
 ## 充值方式
 
 ### 声明
