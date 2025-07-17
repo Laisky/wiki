@@ -117,6 +117,8 @@ _`Request Model` is the value of the model in the user's request parameters, and
 | llama-3.2-90b-vision-preview                  |                                     | FREE        | FREE                                                           |
 | llama-3.3-70b-versatile                       |                                     | FREE        | FREE                                                           |
 | llama-3.3-70b-specdec                         |                                     | FREE        | FREE                                                           |
+| meta-llama/llama-guard-4-12b                  |                                     | 0.2         | 1                                                              |
+| moonshotai/kimi-k2-instruct                   |                                     | 1           | 3                                                              |
 | gemini-1.5-flash                              | gemini-1.5-flash-002                | 0.01875     | 0.075                                                          |
 | gemini-1.5-flash-001                          |                                     | 0.01875     | 0.075                                                          |
 | gemini-1.5-flash-002                          |                                     | 0.01875     | 0.075                                                          |
