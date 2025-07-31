@@ -15,7 +15,7 @@ If you have any questions, feel free to email me at `chat@laisky.com`.
 
 Updates are posted on my Telegram Channel: <https://t.me/laisky_oai>
 
-[Check supported models and rates](@gpt_chat_support_models)
+[Check supported models and rates](https://oneapi.laisky.com/models)
 
 Project source code: If you run into any issues, feel free to submit an Issue or directly make a PR to fix it: <https://github.com/Laisky/one-api>
 
