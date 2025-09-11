@@ -80,6 +80,14 @@ _[(👉 English)](@page_gpt_pay)_
 
 一些第三方产品的示例:
 
+#### Claude Code
+
+```sh
+export ANTHROPIC_MODEL="openai/gpt-oss-120b"
+export ANTHROPIC_BASE_URL="https://oneapi.laisky.com/"
+export ANTHROPIC_AUTH_TOKEN="sk-xxxxxxx"
+```
+
 #### Cursor
 
 <https://www.cursor.com/>

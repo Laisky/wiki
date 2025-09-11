@@ -9,119 +9,127 @@ url: "/projects/gpt/pay"
 
 _[(👉 中文版)](@page_gpt_pay_cn)_
 
-Free users can only access a limited set of models and features. To unlock all supported models and features, simply add credits on my One-API platform to become a paid user. Read on for purchase details and a list of supported models.
+Free users can only access a limited set of models and features. By adding credit on the One‑API platform, you become a paid user and unlock all supported models and features. See the sections below for purchase methods and the list of supported models.
 
-If you have any questions, feel free to email me at `chat@laisky.com`.
+If you have any questions, email me at `chat@laisky.com`.
 
-Updates are posted on my Telegram Channel: <https://t.me/laisky_oai>
+Updates are posted on the Telegram channel: <https://t.me/laisky_oai>
 
-[Check supported models and rates](https://oneapi.laisky.com/models)
+[View the current supported models and rates](https://oneapi.laisky.com/models)
 
-Project source code: If you run into any issues, feel free to submit an Issue or directly make a PR to fix it: <https://github.com/Laisky/one-api>
+The project source code is available on GitHub. If you encounter issues, you can open an Issue or submit a PR directly: <https://github.com/laisky/one-api>
 
-## Purchase
+## Top‑up Methods
 
-### Disclaimer
+### Statement
 
-This is a non-profit project. I don’t charge any handling fees or markups, and I use a standard exchange rate of 8:1 for USD:RMB. Because cross-border payments for OpenAI/Anthropic can be challenging, the exchange costs are higher—these are not service fees I collect.
+This is a non‑profit project. I do not charge any fees or markup; the exchange rate is fixed at 8. Due to well‑known restrictions on cross‑border payments for OpenAI/Anthropic, the exchange‑rate cost is higher, but it is not a service charge.
 
-I’ve noticed some third-party channels provide poor-quality solutions at cheaper prices, so I’ve decided not to integrate any third-party channels. I only use official channels for OpenAI, Azure, Groq, Anthropic, Google, AWS, Cloudflare, DeepSeek, and Replicate.
+Because some third‑party channels provide low‑quality models, I have decided to stop using any third‑party providers. Only official channels from OpenAI, Azure, Groq, Anthropic, Google, AWS, Cloudflare, DeepSeek, and Replicate are supported.
 
-**Everything here comes straight from the official interfaces.**
+**All content on this site comes exclusively from the official APIs listed above. No other third‑party channels are used.**
 
 ### Register an Account
 
-Sign up at <https://oneapi.laisky.com/register>.
+First, create an account at <https://oneapi.laisky.com/register>.
 
-### Purchase Recharge Code
+### Purchase a Top‑up Code
 
-You can send payments through Alipay, WeChat, OKX, BINANCE, or BYBIT. After transferring, please email me (`chat@laisky.com`) the transaction amount so I can process it promptly and send you a recharge code.
+Transfer funds via Alipay, WeChat, OKX, Binance, or Bybit, then email me (`chat@laisky.com`) with the transfer amount and transaction details. I will process the request quickly and send you a top‑up code.
 
-For RMB via Alipay/Wechat, I’ll convert your transfer to USD at the mentioned rate. For crypto, I only accept stablecoins like USDT/USDC/FDUSD/DAI at a 1:1 rate with USD.
+Alipay RMB transfers are converted to USD using the exchange rate described earlier. Crypto payments accept major stablecoins such as USDT, USDC, FDUSD, DAI, and are exchanged 1:1 with USD.
 
 - [Alipay](https://s3.laisky.com/uploads/2025/01/pay_ali.JPG)
 - [WeChat](https://s3.laisky.com/uploads/2025/01/pay_wechat.JPG)
 - OKX UID: `573443235054776568`
-- BINANCE UID: `570130488`
-- BYBIT UID: `262385596`
+- Binance UID: `570130488`
+- Bybit UID: `262385596`
 
-If you need other on-chain payment address, please contact me directly.
+If you need other blockchain‑based payment methods, contact me directly.
 
-### Using the Recharge Code
+### Use a Top‑up Code
 
-Go to <https://oneapi.laisky.com/topup>, enter the recharge code I provided, then click **Redeem**.
+Enter the code you received at <https://oneapi.laisky.com/topup> and click **Redeem**.
 
-## Refunds
+## Refund Policy
 
-If you need a refund, just email me. We'll calculate the refund based on the market price when you added the funds. 📈
+Email me for a refund; the amount will be returned at the market price at the time of the original top‑up.
 
-## How to Use LLM Services
+## Using LLMs
 
-### Getting Your API Token
+### Get a Token
 
-Visit <https://oneapi.laisky.com/token> to create your token.
+<https://oneapi.laisky.com/token>
 
 ![](https://s3.laisky.com/uploads/2024/03/create-token.png?v=3)
 
 ### Web Interface
 
-The easiest way to start is to enter your API key in the top right corner at <https://chat.laisky.com/>.
+The simplest way is to enter your API key in the upper‑right corner of <https://chat.laisky.com>.
 
-Simply refresh the page after entering your API key to unlock all features.
+After entering the API key, refresh the page to unlock all features.
 
 ![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
 
-### Using Third-Party Apps
+### Third‑Party Integration
 
-Important: All requests must go through our gateway instead of directly to OpenAI. When setting up third-party apps, you'll need to configure both the `API_BASE` and `API_KEY`:
+All requests must go through my gateway; direct calls to OpenAI are not allowed. When using a third‑party app, set both `API_BASE` and `API_KEY` in the app:
 
-- Set `API_BASE` to: `https://oneapi.laisky.com` or `https://oneapi.laisky.com/v1`
-- Set `API_KEY` to your personal token
+- `API_BASE` → `https://oneapi.laisky.com` or `https://oneapi.laisky.com/v1`
+- `API_KEY` → your token
 
-Note: The `API_BASE` URL format varies between apps. Some need just `v1`, others don't, and some require the full path `/v1/chat/completions`. Be sure to check your app's documentation for the correct format.
+Be aware that the URL path for `API_BASE` varies by product. Some require `/v1`, others need the full path `/v1/chat/completions`. Consult the documentation of the tool you are using to determine the correct format.
 
-Here are some popular apps you can use:
+Examples for third‑party products:
+
+#### Claude Code
+
+```sh
+export ANTHROPIC_MODEL="openai/gpt-oss-120b"
+export ANTHROPIC_BASE_URL="https://oneapi.laisky.com/"
+export ANTHROPIC_AUTH_TOKEN="sk-xxxxxxx"
+```
 
 #### Cursor
 
-<https://www.cursor.com/>
+<https://www.cursor.com>
 
 ![](https://s3.laisky.com/uploads/2024/09/cursor.png)
 
 #### OpenAI Translator
 
-[Chrome Web Store - OpenAI Translator](https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc)
+[OpenAI Translator Extension](https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc)
 
 ![](https://s3.laisky.com/uploads/2023/12/openai-translator.png)
 
 #### Immersive Translate
 
-[Chrome Web Store - Immersive Translate](https://chromewebstore.google.com/detail/immersive-translate-web-p/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)
+[Immersive Translate Extension](https://chromewebstore.google.com/detail/immersive-translate-web-p/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)
 
 ![](https://s3.laisky.com/uploads/2023/12/immersive-translate.png)
 
 #### GPTCommit
 
-[GitHub - GPTCommit](https://github.com/zurawiki/gptcommit)
+[GPTCommit Repository](https://github.com/zurawiki/gptcommit)
 
 ![](https://s3.laisky.com/uploads/2023/12/gpt-commit.png)
 
 ## Permanent Storage on Arweave
 
-Your API key also grants access to our Arweave file storage service. Upload files for permanent storage using our GraphQL API or Telegram Bot. For detailed documentation, visit <https://blog.laisky.com/p/arweave/>.
+With your API key you can also use the Arweave file‑upload API to store files permanently on Arweave via GraphQL, Telegram Bot, etc. See the blog for more details: <https://blog.laisky.com/p/arweave>.
 
-### Telegram Bot Integration
+### Telegram Bot
 
-[Add our Bot](https://t.me/laisky_alert_bot) on Telegram. After linking your account as shown below, you can directly send files for permanent storage on Arweave.
+Add the bot on Telegram: [@laisky_alert_bot](https://t.me/laisky_alert_bot). After linking your account as shown below, you can send files directly to be stored on Arweave.
 
 ![](https://s3.laisky.com/uploads/2025/01/arweave-bot.jpeg)
 
-### GraphQL API Integration
+### GraphQL API
 
-- API: `https://gq.laisky.com/query/`
-- Header: Set `Authorization` to `Bearer ${API_KEY}`
+- Endpoint: `https://gq.laisky.com/query/`
+- Header: `Authorization: Bearer ${API_KEY}`
 
-To upload files, convert them to base64 format and call the `ArweaveUpload` endpoint with the `fileB64` parameter:
+Convert the file to a base64 string and call the `ArweaveUpload` mutation with the `fileB64` argument.
 
 ```js
 // request
@@ -143,7 +151,7 @@ mutation ar {
 }
 ```
 
-Example cURL request:
+Example with `curl`:
 
 ```sh
 curl --location 'https://gq.laisky.com/query/' \
@@ -154,8 +162,8 @@ curl --location 'https://gq.laisky.com/query/' \
 
 ## Disclaimer
 
-This is a non-profit project - I don't charge any service fees and simply provide access to these services. While I can't guarantee service quality, I'm here to help if you run into any issues.
+This is not a commercial project; it is non‑profit and I do not charge any fees. I only provide a usage channel and make no guarantees about service quality.
 
-All content is generated by users or AI - I'm not responsible for any outputs.
+All content originates from users or AI; I am not responsible for any output.
 
-If you encounter any problems or need a refund, just drop me an email. I'll do my best to help quickly!
+If you encounter any issues, feel free to contact me. I will address them as quickly as possible. Refund requests should also be made via email.
