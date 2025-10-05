@@ -23,8 +23,6 @@ The project source code is available on GitHub. If you encounter issues, you can
 
 ### Statement
 
-This is a non‑profit project. I do not charge any fees or markup; the exchange rate is fixed at 8. Due to well‑known restrictions on cross‑border payments for OpenAI/Anthropic, the exchange‑rate cost is higher, but it is not a service charge.
-
 Because some third‑party channels provide low‑quality models, I have decided to stop using any third‑party providers. Only official channels from OpenAI, Azure, Groq, Anthropic, Google, AWS, Cloudflare, DeepSeek, and Replicate are supported.
 
 **All content on this site comes exclusively from the official APIs listed above. No other third‑party channels are used.**
@@ -37,7 +35,7 @@ First, create an account at <https://oneapi.laisky.com/register>.
 
 Transfer funds via Alipay, WeChat, OKX, Binance, or Bybit, then email me (`chat@laisky.com`) with the transfer amount and transaction details. I will process the request quickly and send you a top‑up code.
 
-Alipay RMB transfers are converted to USD using the exchange rate described earlier. Crypto payments accept major stablecoins such as USDT, USDC, FDUSD, DAI, and are exchanged 1:1 with USD.
+Wechat/Alipay RMB transfers are converted to USD using the fixed exchange rate 8:1. Crypto payments accept major stablecoins such as USDT, USDC, FDUSD, DAI, and are exchanged 1:1 with USD.
 
 - [Alipay](https://s3.laisky.com/uploads/2025/01/pay_ali.JPG)
 - [WeChat](https://s3.laisky.com/uploads/2025/01/pay_wechat.JPG)
@@ -71,7 +69,7 @@ After entering the API key, refresh the page to unlock all features.
 
 ![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
 
-### Third‑Party Integration
+## Third‑Party Integration
 
 All requests must go through my gateway; direct calls to OpenAI are not allowed. When using a third‑party app, set both `API_BASE` and `API_KEY` in the app:
 
@@ -82,7 +80,7 @@ Be aware that the URL path for `API_BASE` varies by product. Some require `/v1`,
 
 Examples for third‑party products:
 
-#### Claude Code
+### Claude Code
 
 ```sh
 export ANTHROPIC_MODEL="openai/gpt-oss-120b"
@@ -90,7 +88,7 @@ export ANTHROPIC_BASE_URL="https://oneapi.laisky.com/"
 export ANTHROPIC_AUTH_TOKEN="sk-xxxxxxx"
 ```
 
-#### Codex Cli
+### Codex Cli
 
 ```sh
 # vi $HOME/.codex/config.toml
@@ -115,25 +113,25 @@ wire_api = "responses"
 query_params = {}
 ```
 
-#### Cursor
+### Cursor
 
 <https://www.cursor.com>
 
 ![](https://s3.laisky.com/uploads/2024/09/cursor.png)
 
-#### OpenAI Translator
+### OpenAI Translator
 
 [OpenAI Translator Extension](https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc)
 
 ![](https://s3.laisky.com/uploads/2023/12/openai-translator.png)
 
-#### Immersive Translate
+### Immersive Translate
 
 [Immersive Translate Extension](https://chromewebstore.google.com/detail/immersive-translate-web-p/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)
 
 ![](https://s3.laisky.com/uploads/2023/12/immersive-translate.png)
 
-#### GPTCommit
+### GPTCommit
 
 [GPTCommit Repository](https://github.com/zurawiki/gptcommit)
 

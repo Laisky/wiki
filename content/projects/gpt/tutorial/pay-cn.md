@@ -72,7 +72,7 @@ _[(👉 English)](@page_gpt_pay)_
 
 ![](https://s3.laisky.com/uploads/2023/12/apitoken.png)
 
-### 第三方使用
+## 第三方使用
 
 你必须通过我的网关来转发请求，而不能直接向 openai 发起请求。当你使用第三方 App 时，则必须在第三方 App 上同时设置 `API_BASE` 和 `API_KEY`。将 `API_BASE` 设置为我的网关地址 `https://oneapi.laisky.com` 或 `https://oneapi.laisky.com/v1`，`API_KEY` 则填入你的 token。
 
@@ -80,7 +80,7 @@ _[(👉 English)](@page_gpt_pay)_
 
 一些第三方产品的示例:
 
-#### Claude Code
+### Claude Code
 
 ```sh
 export ANTHROPIC_MODEL="openai/gpt-oss-120b"
@@ -88,7 +88,7 @@ export ANTHROPIC_BASE_URL="https://oneapi.laisky.com/"
 export ANTHROPIC_AUTH_TOKEN="sk-xxxxxxx"
 ```
 
-#### Codex Cli
+### Codex Cli
 
 ```sh
 # vi $HOME/.codex/config.toml
@@ -113,25 +113,25 @@ wire_api = "responses"
 query_params = {}
 ```
 
-#### Cursor
+### Cursor
 
 <https://www.cursor.com/>
 
 ![](https://s3.laisky.com/uploads/2024/09/cursor.png)
 
-#### OpenAI translator
+### OpenAI translator
 
 [https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc](https://chromewebstore.google.com/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc)
 
 ![](https://s3.laisky.com/uploads/2023/12/openai-translator.png)
 
-#### Immersive Translate
+### Immersive Translate
 
 [https://chromewebstore.google.com/detail/immersive-translate-web-p/bpoadfkcbjbfhfodiogcnhhhpibjhbnh](https://chromewebstore.google.com/detail/immersive-translate-web-p/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)
 
 ![](https://s3.laisky.com/uploads/2023/12/immersive-translate.png)
 
-#### GPTCommit
+### GPTCommit
 
 [https://github.com/zurawiki/gptcommit](https://github.com/zurawiki/gptcommit)
 
