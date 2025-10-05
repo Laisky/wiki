@@ -88,6 +88,31 @@ export ANTHROPIC_BASE_URL="https://oneapi.laisky.com/"
 export ANTHROPIC_AUTH_TOKEN="sk-xxxxxxx"
 ```
 
+#### Codex Cli
+
+```sh
+# vi $HOME/.codex/config.toml
+
+model = "gemini-2.5-flash"
+model_provider = "laisky"
+
+[model_providers.laisky]
+# Name of the provider that will be displayed in the Codex UI.
+name = "Laisky"
+# The path `/chat/completions` will be amended to this URL to make the POST
+# request for the chat completions.
+base_url = "https://oneapi.laisky.com/v1"
+# If `env_key` is set, identifies an environment variable that must be set when
+# using Codex with this provider. The value of the environment variable must be
+# non-empty and will be used in the `Bearer TOKEN` HTTP header for the POST request.
+env_key = "sk-xxxxxxx"
+# Valid values for wire_api are "chat" and "responses". Defaults to "chat" if omitted.
+wire_api = "responses"
+# If necessary, extra query params that need to be added to the URL.
+# See the Azure example below.
+query_params = {}
+```
+
 #### Cursor
 
 <https://www.cursor.com/>
@@ -124,8 +149,8 @@ export ANTHROPIC_AUTH_TOKEN="sk-xxxxxxx"
 
 ### GraphQL API
 
-* API: `https://gq.laisky.com/query/`
-* Header: `Authorization` 设置为 `Bearer ${API_KEY}`
+- API: `https://gq.laisky.com/query/`
+- Header: `Authorization` 设置为 `Bearer ${API_KEY}`
 
 将你要上传的文件转换为 base64 字符串，然后调用 `ArweaveUpload` 接口，传入 `fileB64` 参数即可。
 
