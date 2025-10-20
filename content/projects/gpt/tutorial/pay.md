@@ -39,8 +39,8 @@ Wechat/Alipay RMB transfers are converted to USD using the fixed exchange rate 8
 
 - [Alipay](https://s3.laisky.com/uploads/2025/01/pay_ali.JPG)
 - [WeChat](https://s3.laisky.com/uploads/2025/01/pay_wechat.JPG)
-- OKX UID: `573443235054776568`
-- Binance UID: `570130488`
+- [OKX](https://s3.laisky.com/uploads/2025/10/pay_okx.JPG)
+- [BINANCE](https://s3.laisky.com/uploads/2025/10/pay_binance.PNG)
 - Bybit UID: `262385596`
 
 If you need other blockchain‑based payment methods, contact me directly.

@@ -42,8 +42,8 @@ _[(👉 English)](@page_gpt_pay)_
 
 - [支付宝](https://s3.laisky.com/uploads/2025/01/pay_ali.JPG)
 - [微信](https://s3.laisky.com/uploads/2025/01/pay_wechat.JPG)
-- OKX UID: `573443235054776568`
-- BINANCE UID: `570130488`
+- [OKX](https://s3.laisky.com/uploads/2025/10/pay_okx.JPG)
+- [BINANCE](https://s3.laisky.com/uploads/2025/10/pay_binance.PNG)
 - BYBIT UID: `262385596`
 
 如果需要其他链上汇款方式，请直接联系我。
