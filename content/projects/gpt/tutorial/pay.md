@@ -137,6 +137,26 @@ query_params = {}
 
 ![](https://s3.laisky.com/uploads/2023/12/gpt-commit.png)
 
+### Laisky's MCP Server
+
+<https://mcp.laisky.com> is a remote MCP server.
+
+```js
+{
+	"inputs": [],
+	"servers": {
+		"laisky": {
+			"headers": {
+				"Authorization": "Bearer sk-xxxxxxx"
+			},
+			"type": "http",
+			"url": "https://mcp.laisky.com"
+		}
+	}
+}
+
+```
+
 ## Permanent Storage on Arweave
 
 With your API key you can also use the Arweave file‑upload API to store files permanently on Arweave via GraphQL, Telegram Bot, etc. See the blog for more details: <https://blog.laisky.com/p/arweave>.

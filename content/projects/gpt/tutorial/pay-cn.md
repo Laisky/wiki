@@ -137,6 +137,26 @@ query_params = {}
 
 ![](https://s3.laisky.com/uploads/2023/12/gpt-commit.png)
 
+### Laisky's MCP Server
+
+<https://mcp.laisky.com> is a remote MCP server.
+
+```js
+{
+	"inputs": [],
+	"servers": {
+		"laisky": {
+			"headers": {
+				"Authorization": "Bearer sk-xxxxxxx"
+			},
+			"type": "http",
+			"url": "https://mcp.laisky.com"
+		}
+	}
+}
+
+```
+
 ## Permanent storage on Arweave
 
 使用本站的 API-KEY，也可以调用我的 Arweave 文件上传接口，可以通过 GraphQL/Telegram Bot 等方式将文件上传至 Arweave 永久存储。更多细节可以参考 <https://blog.laisky.com/p/arweave/>。
