@@ -35,7 +35,7 @@ First, create an account at <https://oneapi.laisky.com/register>.
 
 Transfer funds via Alipay, WeChat, OKX, Binance, or Bybit, then email me (`chat@laisky.com`) with the transfer amount and transaction details. I will process the request quickly and send you a top‑up code.
 
-Wechat/Alipay RMB transfers are converted to USD using the fixed exchange rate 7.5:1. Crypto payments accept major stablecoins such as USDT, USDC, FDUSD, DAI, and are exchanged 1:1 with USD.
+Wechat/Alipay RMB transfers are converted to USD using the fixed exchange rate 7.2:1. Crypto payments accept major stablecoins such as USDT, USDC, FDUSD, DAI, and are exchanged 1:1 with USD.
 
 - [Alipay](https://s3.laisky.com/uploads/2025/01/pay_ali.JPG)
 - [WeChat](https://s3.laisky.com/uploads/2025/01/pay_wechat.JPG)
